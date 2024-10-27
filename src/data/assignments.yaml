@@ -1,0 +1,73 @@
+- title: Assignment 1
+  subtitle: WITCHCRAFT!
+  assigned: 1/28/2025
+  due: 2/4/2025
+  image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:st74fc431/full/pct:25/0/bitonal.jpg
+  description: Plot XY data and troubleshoot coordinate systems using the Pleiades gazetteer
+  path: activities/activity01
+  status: available
+  tags: 
+
+- title: Activity 2
+  subtitle: The transatlantic slave trade
+  assigned: February 29, 2024
+  due: March 7, 2024
+  image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:3f462v56m/693,1395,4227,2204/1200,/0/default.jpg
+  description: Exploring the relationship between the geographies of capitalism, slavery, and data
+  path: ./activities/activity01
+  status: unavailable
+  tags: 
+- title: Activity 3
+  subtitle: Lighthouses and the geography of empire
+  assigned: March 29, 2024
+  due: April 7, 2024
+  image: https://iiif.bc.edu/iiif/2/LS-JB-ND-2.jp2/163,386,3497,2284/600,/0/default.jpg
+  description: Illuminating relationships between imperial power and the built environment
+  path: ./activities/activity01
+  status: unavailable
+  tags: 
+- title: Activity 4
+  subtitle: Tracing proto-indo-european geographies
+  assigned: April 29, 2024
+  due: May 7, 2024
+  image: https://upload.wikimedia.org/wikipedia/commons/3/3e/Yamna03.jpg
+  description: Using different variables to estimate the migration patterns of these speakers of an early language
+  path: ./activities/activity01
+  status: unavailable
+  tags: 
+- title: Activity 5
+  subtitle: Archaeology and ancient geostatistics
+  assigned: May 29, 2024
+  due: June 7, 2024
+  image: https://quod.lib.umich.edu/cgi/i/image/api/tile/wcl1ic:8683:WCL008754/full/1200,/0/default.jpg
+  description: Evaluating archaeological sites with spatial statistics
+  path: ./activities/activity01
+  status: unavailable
+  tags: 
+- title: Activity 6
+  subtitle: The transatlantic slave trade
+  assigned: February 29, 2024
+  due: March 7, 2024
+  image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:3f462v56m/693,1395,4227,2204/1200,/0/default.jpg
+  description: Exploring the relationship between the geographies of capitalism, slavery, and data
+  path: ./activities/activity01
+  status: unavailable
+  tags: 
+- title: Activity 7
+  subtitle: Lighthouses and the geography of empire
+  assigned: March 29, 2024
+  due: April 7, 2024
+  image: https://iiif.bc.edu/iiif/2/LS-JB-ND-2.jp2/163,386,3497,2284/600,/0/default.jpg
+  description: Illuminating relationships between imperial power and the built environment
+  path: ./activities/activity01
+  status: unavailable
+  tags: 
+- title: Activity 8
+  subtitle: Tracing proto-indo-european geographies
+  assigned: April 29, 2024
+  due: May 7, 2024
+  image: https://upload.wikimedia.org/wikipedia/commons/3/3e/Yamna03.jpg
+  description: Using different variables to estimate the migration patterns of these speakers of an early language
+  path: ./activities/activity01
+  status: unavailable
+  tags: 

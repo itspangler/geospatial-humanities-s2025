@@ -1,0 +1,29 @@
+- week: Week 14
+  id: week-14
+  date: 4/22/2025
+  title: Open lab
+  subtitle: Basically extra office hours
+  abstract: Use this time to work on whatever—final projects, catch up on outstanding work, etc. I will be at the Data Lab to answer any questions.
+  image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:5m60qv790/58,387,3446,1255/1200,/0/default.jpg
+  ass: Assignment 04
+  ass_path: ../assignments/assignment04
+  slides_path: 
+
+- week: Week 15
+  id: week-15
+  date: 4/29/2025
+  title: Reading period
+  subtitle: No class
+  abstract: Study study...
+  image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:nk322r36p/359,434,1711,934/1200,/0/default.jpg
+  skip: <span class="card-available bigger">📚 🍕 ➡️</span>
+
+- week: Week 16
+  id: week-16
+  date: 5/??/2025
+  title: Exam week
+  subtitle: Final project poster party
+  abstract: We'll choose a day this week to share our final project posters with one another, as a class. Pizza is on the house.
+  image: https://upload.wikimedia.org/wikipedia/commons/a/ae/William_Sharp_-_Railroad_Jubilee_on_Boston_Common_-_48.475_-_Museum_of_Fine_Arts.jpg?20190403014031
+  ass: Final project
+  ass_path: final/details

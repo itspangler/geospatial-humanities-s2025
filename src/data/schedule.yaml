@@ -1,0 +1,159 @@
+- week: Week 1
+  date: 1/21/2025
+  title: What is our subject?
+  subtitle: Assessing the terrain
+  abstract: What are the "geospatial humanities?" What are its constitutive objects, and why should you care about them? What defines a "humanistic" approach to geographic information systems and spatial data? How ought we approach these questions from a technical perspective?
+  slides_path: 
+
+- week: Week 2
+  date: 1/28/2025
+  title: Distortion
+  subtitle: Squashing globes and bending lines
+  abstract: How do we go about displaying round earth as a flat map? What are the basic mathematical and geodetic rules associated with this process? What sacrifices do we have to make in order to “flatten” the globe, and how have those sacrifices been used strategically?
+  read: <i>Squashing the globe</i>
+  read_path: https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/
+  lab: Lab 01
+  lab_path: ../labs/lab01
+  slides_path: 
+
+- week: Week 3
+  date: 2/4/2025
+  title: Data
+  subtitle: Cartographic ethics and geospatial data
+  abstract: What is spatial data and what are spatial data models? Where does spatial data come from? How should you understand data in their social context? What ethical considerations should guide how we represent data cartographically?
+  read: <i>We Still Can't See American Slavery For What It Was</i>
+  read_path: https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.
+  act: Activity 01
+  act_path: ../activities/activity01
+  slides_path: 
+
+- week: Week 4
+  id: week-4
+  date: 2/11/2025
+  title: Design I
+  subtitle: Aesthetics and politics in mapping
+  abstract: What are the best practices for representing spatial data and making maps? To what extent are those practices contingent on flexible cultural and social norms? When should you bend or break these rules in order to make a more effective argument? Is cartography an “art,” a “science,” something in between, or neither? Is cartography anything at all?
+  read: <i>The Surprising Backstory behind Witch Hunts and Reproductive Labor</i>
+  read_path: https://www.scientificamerican.com/podcast/episode/the-surprising-backstory-behind-witch-hunts-and-reproductive-labor/
+  lab: Lab 02
+  lab_path: ../labs/lab02
+  slides_path: 
+
+- week: Week 5
+  date: 2/18/2025
+  title: Archives I
+  subtitle: Contingencies of counting people
+  abstract: Why do we count people? Where does the device of a “census” come from? Who gets counted and who doesn’t? How can we map those presences and absences?
+  slides_path: 
+  act: Activity 02
+  act_path: ../activities/activity02
+  ass: Assignment 01
+  ass_path: ../assignments/assignment01
+  read: <i>Mapping Black Cambridge</i>
+  read_path: https://leventhalmap.org/articles/mapping-black-cambridge/
+
+- week: Week 6
+  id: week-6
+  date: 2/25/2025
+  title: Analysis I
+  subtitle: Spatial research questions
+  abstract: How do we proceed from representation to analysis? What kinds of spatial research questions can we ask and answer using GIS? How do different spatial data structurs permit and constrain different forms of spatial analysis?
+  act: Activity 03
+  act_path: ../activities/activity03
+  slides_path: 
+
+- week: Week 7
+  id: week-7
+  date: 3/4/2025
+  title: Archives II
+  subtitle: Breathing new life into old maps
+  abstract: How do you turn scanned maps into spatial data? Once you have, what should you do with that spatial data?
+  lab: Lab 03
+  lab_path: ../labs/lab03
+  read: TBD
+  read_path: "#"
+  slides_path: 
+
+- week: Week 8
+  id: week-8
+  date: 3/11/2025
+  title: Analysis II
+  subtitle: Pixelated places
+  abstract: What analytical opportunities does representing spatial information as raster data instead of vector data create? What are the basic mathematical and statistical foundations of raster analysis? What are its structures, limits, and histories?
+  ass: Assignment 02
+  ass_path: ../assignments/assignment02
+  read: <i>Pixelated places</i>
+  read_path: https://leventhalmap.org/exhibitions/digital-exhibitions/processing-place
+  slides_path: 
+
+- week: Week 9
+  date: 3/18/2025
+  title: Spring break
+  subtitle: No class
+  abstract: Enjoy the time off!
+
+- week: Week 10
+  id: week-10
+  date: 3/25/2025
+  title: Archives III
+  subtitle: Words
+  abstract: What is a "text?" What happens when a text becomes digital? What are best practices for applying geospatial methods to various kinds of texts? 
+  lab: Lab 04
+  lab_path: ../labs/lab04
+  act: Activity 04
+  act_path: ../activities/activity04
+  slides_path: 
+
+- week: Week 11
+  id: week-11
+  date: 4/1/2025
+  title: Analysis III
+  subtitle: Dig
+  abstract: How can geospatial methods be applied to archaeological inquiry?
+  act: Activity 05
+  act_path: ../activities/activity05
+  read: TBD
+  read_path: 
+  slides_path: 
+
+- week: Week 12
+  id: week-12
+  date: 4/8/2025
+  title: Design II
+  subtitle: Flow
+  abstract: What are good practices for communicating lots of information in a single medium?
+  lab: Lab 05
+  lab_path: ../labs/lab05
+  read: TBD
+  read_path: 
+  act: Activity 06
+  act_path: ../activities/activity06
+  slides_path:
+
+- week: Week 13
+  id: week-13
+  date: 4/15/2025
+  title: Beyond
+  subtitle: Play
+  abstract: What techniques exist for humanistic engagement with geospatial data outside the boundary of “geographic information systems"?
+  ass: Assignment 03
+  ass_path: ../assignments/assignment03
+  slides_path: 
+
+- week: Week 14
+  date: 4/22/2025
+  title: Open lab
+  subtitle: No lecture
+  abstract: No lecture, but I'll be in the Data Lab for questions about final projects.
+
+- week: Week 15
+  date: 4/29/2025
+  title: Reading week
+  subtitle: No class
+  abstract: ''
+
+- week: Week 16
+  date: 5/??/2025
+  title: Exam week
+  subtitle: Final project presentation day
+  abstract: Sometime after spring break, we'll pick a day of this week for our final project presentations.

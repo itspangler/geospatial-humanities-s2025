@@ -1,0 +1,59 @@
+- week: Week 1
+  date: 1/21/2025
+  id: week-1
+  title: What is our subject?
+  subtitle: Assessing the terrain
+  image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:4j03d917r/107,1711,3136,1258/1200,/0/default.jpg
+  abstract: What are the "geospatial humanities?" What are its constitutive objects, and why should you care about them? What defines a "humanistic" approach to geographic information systems and spatial data? How ought we approach these questions from a technical perspective?
+  slides_path: 
+  skip: <i class="card-available">– First day of class... no work due! –</i>
+
+- week: Week 2
+  id: week-2
+  date: 1/28/2025
+  title: Spatializing
+  subtitle: Geohumanities and inquiry
+  image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:bv73fm17b/198,1228,6072,1476/1200,/0/default.jpg
+  abstract: Something something geospatial humanities
+  read: TBD
+  read_path: tbd
+  slides_path: 
+
+- week: Week 3
+  id: week-3
+  date: 2/4/2025
+  title: Distortion
+  subtitle: Squashing globes and bending lines
+  abstract: How do we go about displaying round earth as a flat map? What are the basic mathematical and geodetic rules associated with this process? What sacrifices do we have to make in order to “flatten” the globe, and how have those sacrifices been used strategically?
+  image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:7h149v913/273,1191,7435,1792/1200,/0/default.jpg
+  read: <i>Squashing the globe</i>
+  read_path: https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/
+  lab: Lab 01
+  lab_path: ../labs/lab01
+  slides_path: 
+
+- week: Week 4
+  id: week-4
+  date: 2/11/2025
+  title: Data
+  subtitle: Cartographic ethics and geospatial data
+  abstract: What is spatial data and what are spatial data models? Where does spatial data come from? How should you understand data in their social context? What ethical considerations should guide how we represent data cartographically?
+  image: https://upload.wikimedia.org/wikipedia/commons/b/b9/Blank_NYU_Fortran_punched_card.jpg
+  read: <i>Big? Smart? Clean? Messy? Data in the humanities</i> # <i>We Still Can't See American Slavery For What It Was</i>
+  read_path: https://opus.bibliothek.uni-wuerzburg.de/opus4-wuerzburg/frontdoor/deliver/index/docId/12949/file/059_Schoech_JDH.pdf
+  act: Activity 01
+  act_path: ../activities/activity01
+  slides_path: 
+
+- week: Week 5
+  id: week-5
+  date: 2/18/2025
+  title: Design I
+  subtitle: Aesthetics and politics in mapping
+  abstract: What are the best practices for representing spatial data and making maps? To what extent are those practices contingent on flexible cultural and social norms? When should you bend or break these rules in order to make a more effective argument? Is cartography an “art,” a “science,” something in between, or neither? Is cartography anything at all?
+  image: https://experimentalcraft.wordpress.com/wp-content/uploads/2012/02/raisz-map-symbols-physiography-1.jpg
+  read: <i>The Surprising Backstory behind Witch Hunts and Reproductive Labor</i>
+  read_path: https://www.scientificamerican.com/podcast/episode/the-surprising-backstory-behind-witch-hunts-and-reproductive-labor/
+  lab: Lab 02
+  lab_path: ../labs/lab02
+  slides_path: 
