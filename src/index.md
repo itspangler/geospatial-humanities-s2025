@@ -14,15 +14,17 @@
 
 ## Course summary
 
-In recent years, the humanities have become easier to access 
+In recent years, "the humanities" have become increasingly digital.
 
-This course is organized around one problematic: what's "spatial" about the humanities? This question provides a jumping-off point for examining key concepts in geography, cartography, history, politics, and . We'll sometimes use the term "GIS" (short for **geographic information systems**) to describe these geospatial tools. Typically, GIS is defined as a combination of software, data, methods, and hardware with capabilities for manipulating, analyzing, and displaying spatial data. We'll explore spatial data structures, data creation, basic geodesy, spatial analysis, cartographic visualization, and more. Using the software ArcGIS Pro, you will learn how to use these tools effectively. Just as importantly, by incorporating insights from critical archival studies, indigenous and decolonial mapping, feminist geography, and more into your mapping practice, you will learn how to use them *intentionally*.
+In this course, we will ask what's "spatial" about the humanities. . We'll sometimes use the term "GIS" (short for "geographic information systems") to describe these geospatial tools. Typically, GIS is defined as a combination of software, data, methods, and hardware with capabilities for manipulating, analyzing, and displaying spatial data. We'll explore spatial data structures, data creation, basic geodesy, spatial analysis, cartographic visualization, and more. Using the software ArcGIS Pro, you will learn how to use these tools effectively. Just as importantly, by incorporating insights from critical archival studies, indigenous and decolonial mapping, feminist geography, and more into your mapping practice, you will learn how to use them *intentionally*.
 
 ## Learning objectives and practical skills
 
 Students will learn to use GIS to answer humanistically-informed spatial questions. Detailed labs apply concepts presented in the lectures using a variety of geospatial software in the ArcGIS ecosystem (as well as basic data wrangling literacy in tools like Microsoft Excel). Assignments concentrate on creative applications of concepts covered in lectures and labs, including a final project in which students independently explore a topic from their own field of interest.
 
 Major learning objectives include:
+
+<div class="smaller">
 
 - The coherence (or not) of geospatial humanities as a subset of the humanities in general
 - Maps, mapping, and cartography as power-laden processes
@@ -36,7 +38,11 @@ Major learning objectives include:
 - The limits of representation and analysis in GIS
 - The limits of GIS itself
 
+</div>
+
 More concretely, by the end of this course, students will be able to do the following:
+
+<div class="smaller">
 
 - Identify data structures in spatial data (rasters or vectors)
 - Identify, locate, and acquire spatial data pertinent to projects in their field of interest, as well as pinpoint significant gaps in or problems with existing information
@@ -52,51 +58,45 @@ More concretely, by the end of this course, students will be able to do the foll
 - Evaluate and select appropriate map projection and coordinate system
 - Use ArcGIS Pro software with strong proficiency
 
+</div>
+
 ## Grading
 
-Grading will be based on a **1000-point scale**. You can submit graded activities, labs, assignments up to one week late. By default, all late work will receive a 10% deduction. Details regarding all course assignments, including requirements for the final project and instructions for curations, will be made available on Canvas.
+Grading will be based on a 1000-point scale. You can submit graded activities, labs, assignments up to one week late. Details regarding all course assignments, including requirements for the final project and instructions for curations, will be made available on Canvas.
 
--  Several **labs** (4 graded) worth a total of 200 points (50 each)
--  4 skill-building **assignments** worth a total of 300 points (75 each)
--  Class participation worth 150 points, including in-class and take-home **activities**
--  The **final project** poster or StoryMap worth 250 points
--  A **curatorial introduction** on a digital geohumanities project, process, or product, worth 100 points and presented in small groups
-
-| Type          | Quantity | Points per activity | Percentage            |
-| ------------- | -------- | ------------------- | --------------------- |
-| Labs          | 4        | 50                  | 5% each (20% total)   |
-| Assignments   | 4        | 75                  | 7.5% each (30% total) |
-| Participation | n/a      | 150                 | 15%                   |
-| Final Project | n/a      | 250                 | 25%                   |
-| Curation      | 1        | 100                 | 10%                   |
+-  4 labs worth a total of 200 points (50 each)
+-  4 skill-building assignments worth a total of 300 points (75 each)
+-  Class participation worth 150 points, including in-class and take-home activities
+-  The final project worth 250 points
+-  A curatorial introduction on a digital geohumanities project, process, or product, worth 100 points and presented in small groups
 
 ## Coursework Details
 
 Beyond just showing up to class and paying attention during the lectures, students will develop a geospatial humanities skill set by completing various [activities](#activities), [labs](#labs), and [assignments](#assignments) as well as a [group curation](#curation). This skill set culminates in a [final project](#final-project) on a topic of their choosing.
 
-### Activities
+#### Activities
 
-Nearly every week, we will spend time during class on some kind of **activity**. Some are bigger and some are smaller. Some are submitted and some are not. Overall, they count towards your participation grade.
+Nearly every week, we will spend time during class on some kind of activity. Some are bigger and some are smaller. Some are submitted and some are not. Overall, they count towards your participation grade.
 
-### Labs
+#### Labs
 
-Throughout the semester, students will be assigned five **labs** which explore theories, concepts, and approaches in greater depth. I will drop your lowest lab grade at the end of the semester. Each lab weaves together methods and concepts, using them in a software application (usually ArcGIS Pro), and application to a particular area of the humanities.
+Throughout the semester, students will be assigned five labs which explore theories, concepts, and approaches in greater depth. Each lab weaves together methods and concepts, using them in a software application (usually ArcGIS Pro), and application to a particular area of the humanities.
 
-### Assignments
+#### Assignments
 
-**Assignments** concentrate on self-directed application of concepts explored in lectures and labs. Eventually, you will use labs to focus on how geospatial humanities intersect with your own interests, building toward a final project that applies geospatial humanities methods to a topic of your choosing.
+Assignments concentrate on self-directed application of concepts explored in lectures and labs. Eventually, you will use labs to focus on how geospatial humanities intersect with your own interests, building toward a final project that applies geospatial humanities methods to a topic of your choosing.
 
-### Curation
+#### Curation
 
-Before the end of the semester, you and 2-3 peers will work together on a **curation**—a deep dive into a geospatial humanities project, process, or product—presenting your findings to the class in roughly 10 minutes.
+Before the end of the semester, you and 2-3 peers will work together on a curation—a deep dive into a geospatial humanities project, process, or product—presenting your findings to the class in roughly 10 minutes.
 
-You should have your group and your curation topic selected by class time on Week 3. [Detailed instructions are available on the course site](curations).
+You should have your group and your curation topic selected by class time on Week 3. [Detailed instructions are available here](curations).
 
-### Final Project
+#### Final Project
 
-Beginning officially in Week 8 – although you can, and should, start to think about it earlier – you will commence work on a final project. The final project is an opportunity to collect, process, analyze, and visualize spatial data of your own choosing. Using ArcGIS Pro, you'll choose a topic and elaborate it in three registers: its *conceptual register*, its *technical register*, and its *graphical register*. The final product will result in a **large-format infographic (poster) or an online interactive StoryMap** that describes the research question, data, and methods as well as the analysis and the results. Examples of similar student projects can be found at [Tufts GIS Expo Explorer](https://expoexplorer.it.tufts.edu/).
+Beginning officially in Week 8—although you can, and should, start to think about it earlier—you will commence work on a final project. Using concepts and methods learned in class, you'll create and present a large-format infographic presenting original geospatial research into a humanities topic. [Read more about the final project here](final).
 
-Students may choose to exhibit their work at Tufts' GIS Expo day for 10 points (1% of overall grade) of extra credit. The date is TBD, but the Expo will be held from 3-5pm in the Alumnae Lounge of Aidekman Arts Center (40 Talbot Ave).
+Students may choose to exhibit their work at Tufts' GIS Expo day for 10 points (1% of overall grade) of extra credit. The date is TBD, but the Expo will be held from 3-5pm in the Alumnae Lounge of Aidekman Arts Center (40 Talbot Ave). Examples of similar student projects can be found at [Tufts GIS Expo Explorer](https://expoexplorer.it.tufts.edu/).
 
 ## Required Readings
 
@@ -114,7 +114,7 @@ Tufts University values the diversity of our body of students, staff, and facult
 
 ## Schedule
 
-A general breakdown of weekly themes can be found below. more detailed overview of weekly readings, assignemnts, slides, and more can be found on the [full schedule](schedule).
+A general breakdown of weekly themes can be found below. You'll find a more detailed overview of the course in the [full schedule](schedule).
 
 ---
 
