@@ -195,6 +195,10 @@ td:hover {
   transition: 0.2s;
 }
 
+.block {
+  display: grid;
+}
+
 .work-avail {
   font-family: monospace;
   position:relative;
@@ -247,6 +251,9 @@ td:hover {
 
 .sched-header {
   margin: 3rem 0rem 1em 0rem;
+  max-width: 640px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
 }
 
 .card {
@@ -416,6 +423,7 @@ td:hover {
   margin-bottom: 3rem;
   box-sizing: border-box;
   display: none;
+  background: #fff;
 }
 
 .sched-img-container {
@@ -426,7 +434,11 @@ td:hover {
   box-sizing: border-box;
   cursor: pointer;
   filter: grayscale();
+  transform: scale(0.95);
+  transition:0.2s;
   &:hover {
+    transform: scale(1);
+    transition:0.2s;
     filter: none;
   }
 }
@@ -439,8 +451,45 @@ td:hover {
   max-width: 100%; 
 }
 
-input[type="checkbox"]:checked + .sched-img-container + .schedule {
+input:checked + .sched-img-container + .schedule {
   display: block;
-  max-height: 500px;
 }
 
+input:checked + .sched-img-container {
+  transform: scale(1);
+  filter: none;
+}
+
+.bottom {
+  margin-bottom:0;
+}
+
+/* media */
+
+@media (max-width: 768px) {
+  .schedule {
+    padding: 1.5em; /* Slightly smaller padding on mobile */
+  }
+
+  .sched-img-container {
+    height: auto; /* Allow image container to be flexible */
+    margin-bottom: 1rem;
+    max-width: -webkit-fill-available;
+  }
+
+  .sched-img {
+    /* max-height: none;  */
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .bottom {
+    margin-bottom: 3em;
+  }
+}

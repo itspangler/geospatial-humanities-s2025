@@ -90,27 +90,30 @@ function renderSched(data, part) {
       } else {
           cards.forEach(item => {
           if (item != '') {
-            work+=`<div><p class="sched-ass-due smaller">${headers[count]}</p><div class="work-avail smaller" style="background-color:${colors[count]}">${item}</div></div>`
+            work+=`<div class="bottom"><p class="sched-ass-due smaller">${headers[count]}</p><div class="work-avail smaller" style="background-color:${colors[count]}">${item}</div></div>`
           } else {
-            work+=`<div><p class="sched-ass-due smaller">${headers[count]}</p><div class="work-unavail smaller gray" style="background-color:${colors[count]};">${modifiers[count]}</div></div>`
+            work+=`<div class="bottom"><p class="sched-ass-due smaller">${headers[count]}</p><div class="work-unavail smaller gray" style="background-color:${colors[count]};">${modifiers[count]}</div></div>`
           }
           count+=1
         })
         work = `
-          <div class="grid grid-cols-3">
+          <div class="grid grid-cols-3 block">
             ${work}
           </div>
         `
       }
 
       sched.innerHTML = `
-      <div class="sched-header">
-        <span id="${item.id}" tabindex="-1" class="week smaller"><a class="observablehq-header-anchor" href="#${item.id}">${item.week}</a><span> • ${item.date}</span></span><b class="bigger" style="padding-left:2em;">${item.title}</b><i class="bigger"
-          style="padding-left:1.25em;">${item.subtitle}</i>
+      <div class="sched-header grid grid-cols-2">
+        <div>
+          <span id="${item.id}" tabindex="-1" class="week smaller"><a class="observablehq-header-anchor" href="#${item.id}">${item.week}</a> • ${item.date}</span>
+        </div>
+        <div>
+          <b class="bigger disappear">${item.title}: </b> <i class="bigger disappear">${item.subtitle}</i>
+        </div>
       </div>
       
       <input type="checkbox" id="toggle-${item.id}" style="display: none;">
-
       <div class="sched-img-container" onclick="document.getElementById('toggle-${item.id}').click();">
         <img class="sched-img" src="${item.image}">
       </div>

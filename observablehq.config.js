@@ -13,6 +13,7 @@ export default {
     {name: "Labs", path: "labs"},
     {name: "Assignments", path: "assignments"},
     {name: "Curations", path: "curations"},
+    {name: "Final Project", path: "final"},
     {name: "Archive", path: "archive"}
   ],
 
