@@ -10,7 +10,7 @@ toc: true
 
 ## Part I: Foundations
 
-Familiarizing ourselves with the course problematic. Key concepts in geohumanities, geography, cartography. Understanding spatial data. Basics of ArcGIS Pro. How to make a map. The bread and butter stuff. 
+*Familiarizing ourselves with the course problematic. Key concepts in geohumanities, geography, cartography. Understanding spatial data. Basics of ArcGIS Pro. How to make a map. The bread and butter stuff.*
 
   <div id="i"></div>
 
@@ -18,7 +18,7 @@ Familiarizing ourselves with the course problematic. Key concepts in geohumaniti
 
 ## Part II: Approaches
 
-Different techniques and methods for approaching the course problematic. Getting into vector and raster analysis, including table joins, basic spatial statistics, georeferencing, and more.
+*Different techniques and methods for approaching the course problematic. Getting into vector and raster analysis, including table joins, basic spatial statistics, georeferencing, and more.*
 
   <div id="ii"></div>
 
@@ -26,7 +26,7 @@ Different techniques and methods for approaching the course problematic. Getting
 
 ## Part III: Experiments
 
-Experimenting with concepts and methods. 
+*Experimenting with concepts and methods.*
 
   <div id="iii"></div>
 
@@ -34,7 +34,7 @@ Experimenting with concepts and methods.
 
 ## Part IV: Final Projects
 
-Last three weeks of class are not content driven. Focus on final projects. Keep your head above water. 
+*Last three weeks of class are not content driven. Focus on final projects. Keep your head above water.*
 
   <div id="iv"></div>
 
