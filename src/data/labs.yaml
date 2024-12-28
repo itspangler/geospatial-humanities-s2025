@@ -1,10 +1,10 @@
 - title: Lab 1
-  subtitle: Assessing the terrain
+  subtitle: Assessing the terrain of geospatial humanities
   assigned: 1/28/2025
   due: 2/4/2025
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:tx31tb36q/1047,757,3499,2776/1200,/0/default.jpg
   description: Getting started with geographic information systems for humanistic inquiry
-  path: labs/lab01
+  path: labs/lab01/assessing-the-terrain
   status: available
   tags: 
 - title: Lab 2

@@ -22,7 +22,6 @@ questions.forEach(q => {
     q.insertBefore(link, q.firstChild);
     count++;
 });
-
 ```
 
 <!-- <head><script type="file" src="../components/confetti.js"></script></head> -->
@@ -43,7 +42,7 @@ This lab walks through the process of creating a basic map using ArcGIS Pro and 
 
 By the end of the lab, you'll produce a map that resembles...
 
-![map](asdf)
+<!-- ![map](asdf) -->
 
 By **Tuesday, January 28 at 11:59pm**, submit to Canvas:
 
@@ -54,7 +53,7 @@ By **Tuesday, January 28 at 11:59pm**, submit to Canvas:
 
 ## 1. Preparing your workspace
 
-Before starting a GIS project, you <span class="key">must</span> set up a workspace. By "workspace," I mean a dedicated folder on your computer where you'll store your project files. Creating a sensible workspace structure is a love letter to your future self. By the end of the term, you will have downloaded many gigabytes of spatial data, created at least a dozen ArcGIS Pro projects, and produced hundreds—maybe even thousands—of derivative spatial data files. Practicing disciplined file organization from the start is an important part of setting yourself up for success in this course (and in any situation where you're working with lots of data).
+Before starting a mapping project, you <span class="key">must</span> set up a workspace. By "workspace," I mean a dedicated folder on your computer where you'll store your project files. Creating a sensible workspace structure is a love letter to your future self. By the end of the term, you will have downloaded many gigabytes of spatial data, created at least a dozen ArcGIS Pro projects, and produced hundreds—maybe even thousands—of derivative spatial data files. Practicing disciplined file organization from the start is an important part of setting yourself up for success in this course (and in any situation where you're working with lots of data).
 
 ### Choosing a workspace location
 
@@ -203,7 +202,7 @@ To download your data:
 
 2. The Geodata Repository is basically an annotated file directory. On the home page, AWMC provides [some context](https://github.com/AWMC/geodata/tree/master?tab=readme-ov-file#directory-format) for the file formats in which they publish their data: GeoJSON (`.geojson`) and shapefile (`.shp`). These are two of most common spatial data file formats that you will encounter in this class, and we'll talk a lot more about them in Week 4. For now, suffice to say that each format provides a different approach to encoding features about the world as one of three geometries: *points*, *lines*, and *polygons*. Shapefiles are a [proprietary format developed and maintained by Esri](https://pro.arcgis.com/en/pro-app/latest/help/data/shapefiles/working-with-shapefiles-in-arcgis-pro.htm), the makers of ArcGIS software. GeoJSON is an [open-source spatial data format](https://geojson.org/).
 
-3. Because ArcGIS Pro does not support the GeoJSON format (🙄), we are going to download the shapfile folders. Click on the file `Cultural Shapefiles for Apr 2024.zip`. This is a "zipped" or compressed folder. To initiate the download, click the download icon at the upper-right hand side of the new page:
+3. Because ArcGIS Pro does not provide inherent support the GeoJSON format (🙄), we are going to download the shapfile folders. Click on the file `Cultural Shapefiles for Apr 2024.zip`. This is a "zipped" or compressed folder. To initiate the download, click the download icon at the upper-right hand side of the new page:
 
     <figure>
     <img src="images/image11.png" width=180px>
@@ -233,7 +232,7 @@ What are the two geospatial data formats that you downloaded?
 
 ## 3. Understanding your interface
 
-The ArcGIS Pro interface is pretty complex and it will take you a while to wrap your head around. Here's the basic idea:
+The ArcGIS Pro interface is pretty complex. It could take you a while to wrap your head around it. Here's the basic idea:
 
 <ol class="circle-list">
   <li><b>Project tab:</b> Provides access to application settings and other configurable properties</li>
@@ -327,7 +326,7 @@ Other features in the Ribbon will become more useful when you add data to the pr
     <img src="images/image20.png">
     </figure>
 
-Nice! You've just added your first spatial data layer to an geospatial project. But what can you actually *do* with it?
+    Nice! You've just added your first spatial data layer to an geospatial project. But what can you actually *do* with it?
 
 15. With the "Explore" tool active, click on one of the spatial data features in the **Map view**. You can always use the "Explore" tool to quickly inspect the characteristics of a spatial data feature. When clicked, a pop-up window should appear:
 
@@ -345,32 +344,158 @@ Nice! You've just added your first spatial data layer to an geospatial project. 
 
 17. Try selecting a few features from the **Map view**. You can click on features individually; hold down `shift+click` to select multiple features; or drag a box to select by area.
 
-18. Once your features are selected, click the "Attributes" button in the **Selection** group. A new **Attributes** pane will appear in the same spot as the **Catalog** pane
+18. Once your features are selected, click the "Attributes" button in the **Selection** group. A new **Attributes** pane will appear in the same spot as the **Catalog** pane.
+
+19. Click through different features in the layer `roman_empire_ad_14_extent`—each one is identified by a numerical ID—to reveal their attributes:
 
     <figure>
     <img src="images/image23.gif">
     </figure>
 
-###
+20. Finally, if you right-click on any of the features in the **Attributes** pane, you'll see more options for interacting with the features. Select a feature and click "Zoom To":
 
-Note that there are currently two layers in the **Map view**: `World Topographic Map` and `World Hillshade`. These layers are loaded by default each time you start a new project in ArcGIS Pro.
+    <figure>
+    <img src="images/image24.png" width=250px>
+    </figure>
 
-The **Catalog pane** essentially functions as a view into your computer's files. You can use it to navigate and traverse file directories in the same way you would use Windows File Explorer. This means you can use it to add data to the project. Let's do that:
+    It will instantly zoom you to that feature in the **Map view**. When you're done inspecting the feature, click the "Previous Extent" button to return to your view of the full data layer.
 
-1. In the `Folders` directory of the Catalog pane, navigate to your data—again (it should be in your `downloaded-data` folder)
+<div class="q">
+<p>
 
-2. Click into `Cultural Shapfiles`
+Using the "Select" tool and the **Attributes** pane, what is the area and perimeter of feature `7`, feature `50`, and feature `113`?</p>
 
-3. Click into `roman_empire_ad_14_extent`—<span class="key">Beware</span> not to add the file `roman_empire_ad_14_provinces`
+(Make sure to click the "Clear" button in the **Selection** group when you're done; this will get rid of those blue lines in your **Map view**.)
+</div>
 
-4. Load the spatial data by dragging the `extent` shapefile from its folder in Catalog and releasing it in the **Map view**:
+### Catalog pane
 
-* 
-* `inland water`
-* `land_coverage`
-* `rivers`
+When you opened the **Attributes** pane, the **Catalog** pane may have mysteriously disappeared. If it did, you can reopen it by clicking on the "Catalog" tab at the bottom right-hand side of the application:
 
-As you drag and drop each of these 
+<figure>
+<img src="images/image25.png" width=250px>
+</figure>
+
+This is a good moment to observe that the whole ArcGIS Pro project interface is visually reconfigurable. Try clicking the thumbtack button at the top right-hand corner of the **Catalog** pane:
+
+<figure>
+<img src="images/image26.png" width=400px>
+</figure>
+
+Both your **Catalog** and **Attributes** panes should collapse onto the sidebar. You can also click the little v-shaped button to its left to "float" the pane, and if you prefer your panes to be docked in a different part of the screen, you can click and hold that top bar to reorganize them. If you want to dispose of a pane altogether, you can close it by clicking the `ｘ`.
+
+<div class="callout">
+
+If you ever close a pane (perhaps by accident) and you need to find it again, open the **View** tab and look at the "Windows" group. It has a variety of options for restoring panes.
+
+<figure>
+<img src="images/image27.png">
+<figcaption>
+
+The "Windows" group in the View tab
+</figcaption>
+</figure>
+</div>
+
+But let's return to the **Catalog** itself.
+
+The **Catalog** essentially functions as a view into your computer's files. You can use it to navigate and traverse file directories in the same way you would use Windows File Explorer. This means you can use it to add data to the project:
+
+1. In the `Folders` directory of the Catalog pane, navigate to your data (if you don't see your `H: drive`, you may need to right-click on `Folders` > `Add Folder Connection` and find your `H: drive`)
+
+2. Click into `Cultural Shapfiles` > `political_shading`
+
+3. Load the following spatial data by dragging the `extent` shapefile from its folder in Catalog and releasing it in the **Map view**:
+
+   * `roman_empire_ad_69_extent`
+   * `roman_empire_ad_117_extent`
+   * `roman_empire_ad_200_extent`
+
+    As you drag and drop each of these files into the map, notice how they cascade into the **Contents** pane. You may have to reorder them 
+
+    Once you've done so, the project should resemble:
+
+    <figure>
+    <img src="images/image28.png">
+    </figure>
+
+    This "drag and drop" method can be a little quicker than the "point and click" method that you used by clicking the "Add Data" button in the **Ribbon**.
+
+4. The **Catalog** pane, in addition to providing a view into the files on your computer via the "Folders" tab, also provides options for you to view "Maps" and "Databases".
+
+5. You can use the **Catalog** to interact with maps inside your ArcGIS Pro Project. First, unfold the "Maps" tab, and you'll see an object titled "Map." Right-click it, choose "Rename," and give it a new name—maybe something like "Reference map." (You can also rename a file by clicking it once while it's already highlighted, just like most other file explorer applications.)
+
+    Now, right click on "Maps" and choose "New map." This will create a new, empty map view, titled "Map" by default. You can rename this one too, if you want. You should now see something like this, with two tabs in your **Map** pane corresponding to two map objects in your **Catalog** pane:
+
+    <figure>
+    <img src="images/image29.png">
+    </figure>
+
+6. You can also use the **Catalog** to interact with your project's *[geodatabase](https://pro.arcgis.com/en/pro-app/latest/help/data/geodatabases/overview/fundamentals-of-the-geodatabase.htm)*.
+
+    Since my project is named `lab01`, you should see a geodatabase named `lab01` under "Databases" in the **Catalog** pane:
+
+    <figure>
+    <img src="images/image30.png" width="350">
+    </figure>
+
+    A geodatabase can store various types of geographic datasets. You can import the shapefiles you've loaded in your project as "Feature classes" in the `lab01` geodatabase.
+
+    To do so, right-click `lab01` > `Import` > `Feature Class(es)`. This will open a tool called "Feature Class To Geodatabase." From the "Input Features" drop-down menu, select the four data layers you're already loaded into your map:
+    
+    <figure>
+    <img src="images/image31.png" width="350">
+    </figure>
+    
+    Then, click "Run." A little green bar will appear at the bottom of the screen letting you know when the tool has finished running.
+
+7. When it's done, click the "Back" button at the top left-hand corner of the tool panel. This will return you to a **Catalog** pane and geodatabase that contains four new "Feature Classes," each bearing the same name as the layers in your map:
+
+    <figure>
+    <img src="images/image32.png" width="350">
+    </figure>
+
+8. Currently, the feature class inside your geodatabase is a separate file from the layers in your map. Let's confirm this by examining their file paths, or the string of text that specifies where these files are stored on your computer.
+
+    On the layer `roman_empire_ad_14_extent` in your **Contents** pane, right-click > `Properties` > `Source`. Make note of the file path—it should begin with `H:/`—and then do the same for the feature class `roman_empire_ad_14_extent` in your `lab01` geodatabase.
+
+<div class="q">
+
+What is the data type and file path of the layer `roman_empire_ad_14_extent` in your **Contents** pane? What is the data type and file path of the similarly titled feature class in your `lab01` geodatabase?
+
+</div>
+
+### Contents pane
+
+You've interacted with the **Contents** pane on the left-hand side of your project interface a lot already. It lists all of the data layers that you've added to your project. Right now, this should include four layers showing the historical extent of Roman Empire at four different years.
+
+In the **Contents** pane, you can perform basic spatial data organization tasks like...
+
+* changing the render order of layers by clicking and dragging
+* toggling layers on and off by clicking the checked box
+* renaming layers by right-clicking > `Rename`
+
+You can also use it to access, examine, and edit critical layer properties like...
+
+* a layer's attribute table
+* a layer's symbology
+* a layer's metadata
+
+Let's dwell for a moment in these layer properties.
+
+1. The **Attribute Table** displays all of the qualitative and quantitative information associated with a given layer. To open it, you can right-click a layer > `Attribute Table` or select a layer and press `ctrl+T`.
+
+2. Open the attribute table for the layer `roman_empire_ad_200_extent` (make sure it's at the top of your "stack" of layers). You should see something like this:
+
+    <figure>
+    <img src="images/image34.png">
+    <figcaption>
+
+    The attribute table
+    </figcaption>
+    </figure>
+
+3. You can use the attribute table to store important qualitative and quantitative details about the geometric features represented on the map. Each feature in the map corresponds to a row in the attribute table. You can "Select" an entire row by clicking the empty white spot on the left of the row. This will highlight the whole row in blue as well as the corresponding geographic feature on the **Map** view. You can do the same in reverse: clicking on a feature on the **Map** will highlight its corresponding attribute table record in blue.
 
 ## 4. Making your map
 
