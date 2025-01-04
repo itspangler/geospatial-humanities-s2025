@@ -29,7 +29,7 @@
   read: <i>Squashing the globe</i>
   read_path: https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/
   lab: Lab 01
-  lab_path: ../labs/lab01
+  lab_path: ../coursework/labs/lab01
   slides_path: 
 
 - week: Week 4
@@ -42,7 +42,7 @@
   read: <i>Big? Smart? Clean? Messy? Data in the humanities</i> # <i>We Still Can't See American Slavery For What It Was</i>
   read_path: https://opus.bibliothek.uni-wuerzburg.de/opus4-wuerzburg/frontdoor/deliver/index/docId/12949/file/059_Schoech_JDH.pdf
   act: Activity 01
-  act_path: ../activities/activity01
+  act_path: ../coursework/activities/activity01
   slides_path: 
 
 - week: Week 5
@@ -55,5 +55,5 @@
   read: <i>The Surprising Backstory behind Witch Hunts and Reproductive Labor</i>
   read_path: https://www.scientificamerican.com/podcast/episode/the-surprising-backstory-behind-witch-hunts-and-reproductive-labor/
   lab: Lab 02
-  lab_path: ../labs/lab02
+  lab_path: ../coursework/labs/lab02
   slides_path: 

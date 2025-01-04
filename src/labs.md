@@ -75,9 +75,3 @@ labs();
 </body>
 
 ---
-
-<script
-  type="module"
-  src="https://unpkg.com/playhtml@latest/dist/init.es.js"
->
-</script>

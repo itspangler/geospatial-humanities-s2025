@@ -6,9 +6,9 @@
   abstract: What is a "text?" What happens when a text becomes digital? What are best practices for applying geospatial methods to various kinds of texts? 
   image: https://opendomesday.org/media/images/domesday-book.png
   lab: Lab 04
-  lab_path: ../labs/lab04
+  lab_path: ../coursework/labs/lab04
   act: Activity 04
-  act_path: ../activities/activity04
+  act_path: ../coursework/activities/activity04
   slides_path: 
 
 - week: Week 12
@@ -19,7 +19,7 @@
   abstract: How can geospatial methods be applied to archaeological inquiry?
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:bv73fm17b/271,957,6035,2861/full/0/default.jpg
   act: Activity 05
-  act_path: ../activities/activity05
+  act_path: ../coursework/activities/activity05
   read: TBD
   read_path: 
   slides_path: 
@@ -32,13 +32,13 @@
   abstract: What are good practices for communicating lots of information in a single medium?
   image: https://www.cooperhewitt.org/wp-content/uploads/2022/12/Du-Bois_Combined.jpg
   lab: Lab 05
-  lab_path: ../labs/lab05
+  lab_path: ../coursework/labs/lab05
   read: TBD
   read_path: 
   act: Activity 06
-  act_path: ../activities/activity06
+  act_path: ../coursework/activities/activity06
   ass: Assignment 03
-  ass_path: ../assignments/assignment03
+  ass_path: ../coursework/assignments/assignment03
   slides_path:
 
 # - week: Week 13
@@ -49,5 +49,5 @@
 #   abstract: What techniques exist for humanistic engagement with geospatial data outside the boundary of “geographic information systems"?
 #   image: https://www.nicklally.com/wp-content/uploads/2016/10/enfolding.png
 #   ass: Assignment 03
-#   ass_path: ../assignments/assignment03
+#   ass_path: ../coursework/assignments/assignment03
 #   slides_path: 

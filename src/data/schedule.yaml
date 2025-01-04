@@ -13,7 +13,7 @@
   read: <i>Squashing the globe</i>
   read_path: https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/
   lab: Lab 01
-  lab_path: ../labs/lab01
+  lab_path: ../coursework/labs/lab01
   slides_path: 
 
 - week: Week 3
@@ -24,7 +24,7 @@
   read: <i>We Still Can't See American Slavery For What It Was</i>
   read_path: https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.
   act: Activity 01
-  act_path: ../activities/activity01
+  act_path: ../coursework/activities/activity01
   slides_path: 
 
 - week: Week 4
@@ -36,7 +36,7 @@
   read: <i>The Surprising Backstory behind Witch Hunts and Reproductive Labor</i>
   read_path: https://www.scientificamerican.com/podcast/episode/the-surprising-backstory-behind-witch-hunts-and-reproductive-labor/
   lab: Lab 02
-  lab_path: ../labs/lab02
+  lab_path: ../coursework/labs/lab02
   slides_path: 
 
 - week: Week 5
@@ -46,9 +46,9 @@
   abstract: Why do we count people? Where does the device of a “census” come from? Who gets counted and who doesn’t? How can we map those presences and absences?
   slides_path: 
   act: Activity 02
-  act_path: ../activities/activity02
+  act_path: ../coursework/activities/activity02
   ass: Assignment 01
-  ass_path: ../assignments/assignment01
+  ass_path: ../coursework/assignments/assignment01
   read: <i>Mapping Black Cambridge</i>
   read_path: https://leventhalmap.org/articles/mapping-black-cambridge/
 
@@ -59,7 +59,7 @@
   subtitle: Spatial research questions
   abstract: How do we proceed from representation to analysis? What kinds of spatial research questions can we ask and answer using GIS? How do different spatial data structurs permit and constrain different forms of spatial analysis?
   act: Activity 03
-  act_path: ../activities/activity03
+  act_path: ../coursework/activities/activity03
   slides_path: 
 
 - week: Week 7
@@ -69,7 +69,7 @@
   subtitle: Breathing new life into old maps
   abstract: How do you turn scanned maps into spatial data? Once you have, what should you do with that spatial data?
   lab: Lab 03
-  lab_path: ../labs/lab03
+  lab_path: ../coursework/labs/lab03
   read: TBD
   read_path: "#"
   slides_path: 
@@ -81,7 +81,7 @@
   subtitle: Pixelated places
   abstract: What analytical opportunities does representing spatial information as raster data instead of vector data create? What are the basic mathematical and statistical foundations of raster analysis? What are its structures, limits, and histories?
   ass: Assignment 02
-  ass_path: ../assignments/assignment02
+  ass_path: ../coursework/assignments/assignment02
   read: <i>Pixelated places</i>
   read_path: https://leventhalmap.org/exhibitions/digital-exhibitions/processing-place
   slides_path: 
@@ -99,9 +99,9 @@
   subtitle: Words
   abstract: What is a "text?" What happens when a text becomes digital? What are best practices for applying geospatial methods to various kinds of texts? 
   lab: Lab 04
-  lab_path: ../labs/lab04
+  lab_path: ../coursework/labs/lab04
   act: Activity 04
-  act_path: ../activities/activity04
+  act_path: ../coursework/activities/activity04
   slides_path: 
 
 - week: Week 11
@@ -111,7 +111,7 @@
   subtitle: Dig
   abstract: How can geospatial methods be applied to archaeological inquiry?
   act: Activity 05
-  act_path: ../activities/activity05
+  act_path: ../coursework/activities/activity05
   read: TBD
   read_path: 
   slides_path: 
@@ -123,11 +123,11 @@
   subtitle: Flow
   abstract: What are good practices for communicating lots of information in a single medium?
   lab: Lab 05
-  lab_path: ../labs/lab05
+  lab_path: ../coursework/labs/lab05
   read: TBD
   read_path: 
   act: Activity 06
-  act_path: ../activities/activity06
+  act_path: ../coursework/activities/activity06
   slides_path:
 
 - week: Week 13
@@ -137,7 +137,7 @@
   subtitle: Play
   abstract: What techniques exist for humanistic engagement with geospatial data outside the boundary of “geographic information systems"?
   ass: Assignment 03
-  ass_path: ../assignments/assignment03
+  ass_path: ../coursework/assignments/assignment03
   slides_path: 
 
 - week: Week 14

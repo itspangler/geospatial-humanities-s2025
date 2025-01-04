@@ -1,4 +1,6 @@
 @import url("observablehq:default.css");
+@import url('https://fonts.cdnfonts.com/css/noto-sans-math');
+
 /* @import url("observablehq:theme-air.css"); */
 
 /* root */
@@ -26,6 +28,8 @@
 
 h2, h3, h4 {
   padding: 5px 0px 10px 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* layout stuff */
@@ -37,6 +41,7 @@ h2, h3, h4 {
 /* table stuff */
 
 .headless {
+  margin: 0.5rem;
   tbody {
     border-bottom: 1px solid var(--theme-foreground);
   }
@@ -247,92 +252,6 @@ hr {
   font-family: monospace;
 }
 
-.reading {
-  background-color: beige;
-  padding: 2em;
-  border-radius: 0.8em;
-}
-
-.assignments {
-  background-color: rgb(253, 233, 232);
-  padding: 2em;
-  border-radius: 0.8em;
-}
-
-.sched-ass-due {
-  color: var(--theme-foreground);
-  text-align: center;
-  max-height:fit-content;
-  font-style: oblique;
-  letter-spacing: 0.3em;
-  border-radius: 0.8em;
-}
-
-.assigned {
-  font-family: monospace;
-  font-size: 0.7em;
-  padding: 6px;
-  margin: 2px;
-  border-radius: 0.8em;
-  background: color(srgb 63.9% 88.2% 60.4%);
-}
-
-.due {
-  font-family: monospace;
-  font-size: 0.7em;
-  padding: 6px;
-  margin: 2px;
-  border-radius: 0.8em;
-  background: var(--theme-foreground-focus-muted)
-}
-
-.card-unavailable {
-  vertical-align: top;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  width: 200px;
-  display: inline-block;
-  text-align: center;
-  transition: 0.2s;
-  filter: grayscale();
-}
-
-.card-title {
-  font-weight: 900 !important;
-  margin-top: 6px;
-}
-
-.card-description {
-  font-size: 0.8em;
-}
-
-.card-available:hover {
-  text-decoration: none;
-  transform: scale(1.1);
-  transition:0.2s;
-}
-
-.img-container {
-  position: relative;
-  text-align: center;
-  max-height: 125px;
-  max-width: 200px;
-  margin: 8px;
-  transition: 0.1s;
-}
-
-.card-available img, .card-unavailable img {
-  max-height: 125px !important;
-  max-width: 90%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.card-available .img-container:hover {
-  /* filter: opacity(0.6); */
-}
-
 .blur {
   filter: blur(4px);
   -webkit-user-select: none !important; /* Safari */        
@@ -349,43 +268,50 @@ hr {
   user-select: none !important; /* Standard */
 }
 
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 .spaced {
   letter-spacing: 0.5em;
 }
 
-.date::before {
-  content:"🗓️ ";
-  font-size: 1.5em;
-  font-style: normal !important;
-}
-
 .schedule {
-  max-width: 200px;
+  width:200px;
   display: none;
 }
 
-.sched-img-container {
+.sched-container {
   overflow: hidden;
-  width: 200px;
+  width:200px;
   display: block;
   cursor:help;
 }
 
-.sched-img {
-  width: 100%;
-  height: auto;
-  max-height: 80px;
-  object-fit: cover;
-  max-width: 100%; 
+.coursework {
+  width:250px;
+  display:none;
 }
 
-input:checked + .sched-img-container + .schedule {
+.coursework-container {
+  overflow: hidden;
+  width:250px;
   display: block;
+  cursor:help;
 }
 
-input:checked + .sched-img-container {
-  transform: scale(1);
-  filter: none;
+input:checked + .sched-container + .schedule {
+  display:block;
+}
+
+input:checked + .coursework-container + .coursework {
+  display:block;
 }
 
 .bottom {
@@ -475,13 +401,11 @@ input:checked + .sched-img-container {
   width: 25%;
   padding-left: 0.5rem;
   margin: 0px 200px 1.5em 2em;
-  /* margin-right: 200px;
-  margin-bottom: 1.5em; */
   float: right;
-  box-shadow: inset 5px 0px 5px -5px #b65dbe;
+  border-left: 4px solid var(--theme-foreground-focus);
   font-style: italic;
-  color: #29627e;
-  background: rgb(239, 243, 250);
+  color: #255770;
+  background: rgb(244, 248, 254);
 }
 
 .aside > p {
@@ -576,6 +500,8 @@ figure figcaption {
   word-spacing: 0.2em;
   text-transform: uppercase;
   color: #29627e;
+  border-top: 1px dotted var(--theme-foreground);
+  border-bottom: 1px dotted var(--theme-foreground);
 }
 
 .logo {
@@ -634,4 +560,73 @@ details summary::marker {
 
 .gray {
   color: var(--grey);
+}
+
+.fit {
+  width:fit-content;
+}
+
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {
+  background: var(--theme-foreground);
+}
+
+.leaflet-control-layers::before{
+  font-size: 1.2em;
+  font-weight:900;
+  content: 'Tisch Library in...'
+}
+
+a.submit {
+  background-color: var(--theme-foreground);
+  color: #fff;
+  border-radius: 4px;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 8px 32px;
+}
+a.submit:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+#Layer_1 {
+  filter:drop-shadow(0px 0px 20px black)
+}
+
+.scaledown {
+  width: 100%;
+  height: 600px;
+  /* transform:scale(0.75); */
+}
+
+.math {
+  font-family: 'Noto Sans Math';
+  font-weight:400;
+  margin-left: 2em;
+}
+
+a[rel~="next"], a[rel~="prev"] {
+  border: 1px dotted var(--theme-foreground) !important;
+  /* background: var(--theme-foreground-focus-muted) */
+}
+
+footer {
+  margin-top: 2rem !important;
+}
+
+.reading-list {
+  text-indent: -3em;
+  margin-left: 3em;
+}
+
+blockquote {
+  font-size: 0.8em;
+  color: #255770;
+  padding: 1rem 1rem 1rem 2rem;
+  border-left:4px solid var(--theme-foreground);
+  background: rgb(244, 248, 254);
 }

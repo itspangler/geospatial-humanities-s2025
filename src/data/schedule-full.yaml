@@ -7,7 +7,7 @@
   abstract: What are the "geospatial humanities?" What are its constitutive objects, and why should you care about them?
   slides: ''
   read: ''
-  act: '../activities/activity01/geohumanities'
+  act: '../coursework/activities/activity01/what-is-a-map'
   lab: ''
   ass: ''
 
@@ -21,33 +21,33 @@
   slides: ''
   read: 'https://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/'
   act: ''
-  lab: '../labs/lab01/assessing-the-terrain'
+  lab: '../coursework/labs/lab01/assessing-the-terrain'
   ass: ''
 
 - week: Week 03
   id: week-3
   date: 02/04
   title: Distortion
-  subtitle: Squashing globes and bending lines
+  subtitle: To flatten the world
   abstract: How do we go about displaying round earth as a flat map? What sacrifices do we have to make in order to “flatten” the globe, and how have those sacrifices been used strategically?
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:7h149v913/273,1191,7435,1792/1200,/0/default.jpg
   slides: '' 
   read: 'https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/'
   act: ''
   lab: ''
-  ass: '../assignments/assignment01/geohumanities'
+  ass: '../coursework/assignments/assignment01/geohumanities'
   
 
 - week: Week 04
   id: week-4
   date: 02/11
   title: Data
-  subtitle: Cartographic ethics and geospatial data
+  subtitle: Carto-ethics, geo-data
   abstract: What is spatial data and where does it come from? How should you understand spatial data in their social, political, and ethical context?
   localimage: punch-card.png
   slides: ''
   read: https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.
-  act: ../activities/activity02/mapping-ancient-places
+  act: ../coursework/activities/activity02/mapping-ancient-places
   lab: ''
   ass: ''
 
@@ -55,44 +55,44 @@
   id: week-5
   date: 02/18
   title: Design I
-  subtitle: Aesthetics and politics in mapping
+  subtitle: Aesthetics and efficacy
   abstract: What are the best practices for representing spatial data and making maps? When should you bend or break these rules in order to make a more effective argument?
   image: https://experimentalcraft.wordpress.com/wp-content/uploads/2012/02/raisz-map-symbols-physiography-1.jpg
   slides: ''
   read: ''
   act: ''
-  lab: ../labs/lab02/slave-voyages
+  lab: ../coursework/labs/lab02/slave-voyages
   ass: ''
 
 - week: Week 06
   id: week-6
-  date: 02/18
+  date: 02/25
   title: Archives I
-  subtitle: Contingencies of counting people
+  subtitle: Counting people
   abstract: Why do we count people? Where does the device of a “census” come from? Who gets counted and who doesn’t? How can we map those presences and absences?
   image: https://opendomesday.org/media/images/domesday-book.png
   slides: ''
   read: 'https://leventhalmap.org/articles/mapping-black-cambridge/'
   act: ''
   lab: ''
-  ass: '../assignments/assignment02/witchcraft'
+  ass: '../coursework/assignments/assignment02/witchcraft'
 
 - week: Week 07
   id: week-7
-  date: 02/25
+  date: 03/04
   title: Analysis I
   subtitle: Spatial research questions
-  abstract: How do we proceed from representation to analysis? What kinds of spatial research questions can we ask and answer using GIS? How do different spatial data structurs permit and constrain different forms of spatial analysis?
+  abstract: What kinds of spatial research questions can we ask and answer using geospatial methods? How do spatial data structures—and different forms of spatial thinking—permit or constrain different forms of spatial analysis?
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:fn107c345/671,2077,9402,2786/1200,/0/default.jpg
   slides: ''
-  read: ''
-  act: ../activities/activity03/historic-africa
+  read: 'https://www.dourish.com/classes/readings/Massey-PowerGeometries.pdf'
+  act: ../coursework/activities/activity03/historical-population
   lab: ''
   ass: ''
 
 - week: Week 08
   id: week-8
-  date: 03/04
+  date: 03/11
   title: Archives II
   subtitle: Breathing new life into old maps
   abstract: How do you turn scanned maps into spatial data? Once you have, what should you do with that spatial data?
@@ -100,24 +100,11 @@
   slides: ''
   read: ''
   act: ''
-  lab: ../labs/lab03/lighthouses
+  lab: ../coursework/labs/lab03/lighthouses
   ass: ''
 
 - week: Week 09
-  id: week-9
-  date: 03/11
-  title: Analysis II
-  subtitle: Pixelated places
-  abstract: How can you measure the world in pixels? What are the foundations of this "raster" analysis? What are its structures, limits, and histories?
-  image: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/media/images/L1_028037_19720725_B654_firstlight.jpg?itok=4Co5IoUk
-  slides: ''
-  read: 'https://www.leventhalmap.org/digital-exhibitions/processing-place/'
-  act: ''
-  lab: ''
-  ass: ../assignments/assignment02/parking-lot-cemeteries
-
-- week: Week 10
-  id: week-10
+  id: week-09
   date: 03/18
   title: Spring break
   subtitle: No class
@@ -129,8 +116,21 @@
   lab: ''
   ass: ''
 
-- week: Week 12
-  id: week-12
+- week: Week 10
+  id: week-10
+  date: 03/25
+  title: Analysis II
+  subtitle: Pixelated places
+  abstract: How can you measure the world in pixels? What are the foundations of this "raster" analysis? What are its structures, limits, and histories?
+  image: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/media/images/L1_028037_19720725_B654_firstlight.jpg?itok=4Co5IoUk
+  slides: ''
+  read: ''
+  act: '../coursework/activities/activity04/fp-proposal'
+  lab: ''
+  ass: ../coursework/assignments/assignment03/parking-lot-cemeteries
+
+- week: Week 11
+  id: week-11
   date: 04/01
   title: Analysis III
   subtitle: Introductory spatial statistics
@@ -139,50 +139,37 @@
   slides: ''
   read: ''
   act: ''
-  lab: '../labs/lab04/indo-european'
+  lab: '../coursework/labs/lab04/indo-european'
   ass: ''
 
-- week: Week 11
-  id: week-11
-  date: 03/25
+- week: Week 12
+  id: week-12
+  date: 04/08
   title: Archives III
-  subtitle: Text
+  subtitle: Mapping and/as text
   abstract: What is a "text?" What happens when a text becomes digital? In what cases could mapping a text be useful or instructive?
   image: https://opendomesday.org/media/images/domesday-book.png
   slides: ''
   read: ''
-  act: '../activity/activity04/spatial-statistics'
+  act: '../coursework/activities/activity05/spatial-statistics'
   lab: ''
   ass: ''
 
 - week: Week 13
   id: week-13
-  date: 04/08
+  date: 04/15
   title: Design II
   subtitle: Data visualization
   abstract: What tools exist for visualizing data beyond the map?
   image: https://www.cooperhewitt.org/wp-content/uploads/2022/12/Du-Bois_Combined.jpg
   slides: ''
   read: 'section from Meghan Kelly on feminist map icons?'
-  act: '../activity/activity05/nlp'
+  act: '../coursework/activities/activity06/nlp-for-gis'
   lab: ''
   ass: ''
 
 - week: Week 14
   id: week-14
-  date: 04/15
-  title: Data II
-  subtitle: Working with modern data infrastructures
-  abstract: How can you use modern techniques to fetch, load, and work with data in a more dynamic fashion? Why might you want to do that as opposed to, e.g., downloading as a file?
-  image: https://www.nicklally.com/wp-content/uploads/2016/10/enfolding.png
-  slides: ''
-  read: ''
-  act: ''
-  lab: ''
-  ass: '../assignments/assignment04/feminist-iconography'
-
-- week: Week 15
-  id: week-15
   date: 04/22
   title: Open lab
   subtitle: Basically extra office hours
@@ -192,10 +179,10 @@
   read: ''
   act: ''
   lab: ''
-  ass: ''
+  ass: '../coursework/assignments/assignment04/fp-draft'
 
-- week: Week 16
-  id: week-16
+- week: Week 15
+  id: week-15
   date: 04/29
   title: Reading period
   subtitle: No class
@@ -207,8 +194,8 @@
   lab: ''
   ass: ''
 
-- week: Week 17
-  id: week-17
+- week: Week 16
+  id: week-16
   date: 05/??
   title: Exam week
   subtitle: Final project poster party

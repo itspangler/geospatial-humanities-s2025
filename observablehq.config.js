@@ -9,12 +9,13 @@ export default {
   pages: [
     {name: "Syllabus", path: "syllabus"},
     {name: "Schedule", path: "schedule"},
-    {name: "Activities", path: "activities"},
-    {name: "Labs", path: "labs"},
-    {name: "Assignments", path: "assignments"},
+    {name: "Coursework", path: "coursework"},
+    // {name: "Activities", path: "activities"},
+    // {name: "Labs", path: "labs"},
+    // {name: "Assignments", path: "assignments"},
     {name: "Curations", path: "curations"},
     {name: "Final Project", path: "final"},
-    {name: "Archive", path: "archive"}
+    // {name: "Archive", path: "archive"}
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
@@ -26,15 +27,15 @@ export default {
   style: "assets/custom-style.css",
 
   // Some additional configuration options and their defaults:
-  theme: "light", // try "light", "dark", "slate", etc.
+  // theme: "slate", // try "light", "dark", "slate", etc.
   // header: "", // what to show in the header (HTML)
-  footer: "Built with <a href='https://observablehq.com/framework/getting-started'>Observable Framework</a>. Some inspiration from <a href='https://mptc.io/'>Kieran Healy</a>.", // what to show in the footer (HTML)
+  footer: "Built with <a href='https://observablehq.com/framework/getting-started'>Observable Framework</a>. Some inspiration drawn from <a href='https://mptc.io/'>Kieran Healy</a> and <a href='https://openmapsmeeting.nl/' target='blank' >Jules Schoonman</a>.", // what to show in the footer (HTML)
   // sidebar: true, // whether to show the sidebar
   // toc: true, // whether to show the table of contents
   // pager: true, // whether to show previous & next links in the footer
   // output: "dist", // path to the output root for build
   // search: true, // activate search
   // linkify: true, // convert URLs in Markdown to links
-  // typographer: false, // smart quotes and other typographic improvements
-  // cleanUrls: true, // drop .html from URLs
+  typographer: true, // smart quotes and other typographic improvements
+  cleanUrls: true, // drop .html from URLs
 };

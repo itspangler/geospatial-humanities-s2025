@@ -1,5 +1,6 @@
 ---
 title: Syllabus
+bibliography: data/2025.bib
 ---
 
 # Syllabus
@@ -18,7 +19,7 @@ title: Syllabus
 
 ## Course summary
 
-In this course, we will use geospatial tools, theory, and methods to explore "the humanities," broadly conceived. How can concepts like space, place, and landscape inform humanistic inquiry? What kinds of data exist for engaging computationally with topics like art, history, literature, and archaeology? And what tools exist for analyzing the complicated relationships between people, the places they live, and the fruits of their creative endeavors?
+In this course, we will use geospatial tools, theory, and methods to explore "the humanities," broadly conceived. How can concepts like space, place, and landscape inform humanistic inquiry? What kinds of data exist for engaging computationally with topics like art, history, literature, and archaeology? And what tools can be used to geographically analyze the complicated relationships between people, the places they live, and the fruits of their creative endeavors?
 
 Over the semester, students will learn to use geographic information systems—or "GIS"—to ask and answer humanistically-informed, historically-grounded spatial questions. Lectures introduce key concepts in the geospatial humanities, from spatial data structures to feminist cartography, while detailed labs put those concepts into motion. Assignments concentrate on self-guided engagements with course material, and a final project allows students to independently study a geospatial humanities topic of their own choosing.
 
@@ -36,7 +37,7 @@ Major learning objectives include:
 - Principles of cartographic design (and when to deviate from them)
 - The limits of representation and analysis in GIS
 
-More concretely, by the end of this course, students will be able to do the following:
+By the end of this course, students will gain the following skills:
 
 - Identify data structures in spatial data
 - Evaluate and select appropriate map projections and coordinate systems
@@ -52,11 +53,11 @@ More concretely, by the end of this course, students will be able to do the foll
 
 Grading will be based on a 1000-point scale. You can submit graded activities, labs, and assignments up to one week late. Details regarding all course assignments, including requirements for the final project and instructions for curations, will be made available on Canvas.
 
--  [Numerous activities](#activities) worth 150 points
--  4 [labs]($labs) worth a total of 200 points (50 each)
--  4 skill-building [assignments](#assignments) worth a total of 300 points (75 each)
--  A [curatorial introduction](#curation) on a digital geohumanities project, process, or product, worth 100 points and presented in small groups
--  The [final project](#final-project) worth 250 points
+-  [6 graded activities](#activities) worth 150 points (25 each)
+-  [4 labs]($labs) worth a total of 200 points (50 each)
+-  [4 skill-building assignments](#assignments) worth a total of 300 points (75 each)
+-  [1 curatorial introduction](#curation) on a digital geohumanities project, process, or product, worth 100 points and presented in small groups
+-  [1 final project](#final-project) worth 250 points
 
 ### Activities
 
@@ -84,7 +85,9 @@ Students may choose to exhibit their work at Tufts' GIS Expo day for 10 points (
 
 ## Required Readings
 
-You'll have something to read just about every week: this is, after all, a "humanities" course just as well as a "geospatial" one. All readings are  listed in the [schedule](schedule), and they are available through online journal databases open to Tufts students, public web sites, or Canvas.
+Many weeks, you'll have something to read in addition to, or in association with, some other activity (this is, after all, a "humanities" course just as well as a "geospatial" one).
+
+All readings are  listed in the [schedule](schedule#course-bibliography). They are all available through online journal databases open to Tufts students.
 
 ## Style Guidelines and Citation
 

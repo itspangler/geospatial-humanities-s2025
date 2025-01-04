@@ -7,9 +7,9 @@
   image: https://opendomesday.org/media/images/domesday-book.png
   slides_path: 
   act: Activity 02
-  act_path: ../activities/activity02
+  act_path: ../coursework/activities/activity02
   ass: Assignment 01
-  ass_path: ../assignments/assignment01
+  ass_path: ../coursework/assignments/assignment01
   read: <i>Mapping Black Cambridge</i>
   read_path: https://leventhalmap.org/articles/mapping-black-cambridge/
 
@@ -21,7 +21,7 @@
   abstract: How do we proceed from representation to analysis? What kinds of spatial research questions can we ask and answer using GIS? How do different spatial data structurs permit and constrain different forms of spatial analysis?
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:fn107c345/671,2077,9402,2786/1200,/0/default.jpg
   act: Activity 03
-  act_path: ../activities/activity03
+  act_path: ../coursework/activities/activity03
   slides_path: 
 
 - week: Week 8
@@ -32,7 +32,7 @@
   abstract: How do you turn scanned maps into spatial data? Once you have, what should you do with that spatial data?
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:1257bn82s/570,1242,7161,1394/1200,/0/default.jpg
   lab: Lab 03
-  lab_path: ../labs/lab03
+  lab_path: ../coursework/labs/lab03
   read: TBD
   read_path: "#"
   slides_path: 
@@ -54,7 +54,7 @@
   abstract: What analytical opportunities does representing spatial information as raster data instead of vector data create? What are the basic mathematical and statistical foundations of raster analysis? What are its structures, limits, and histories?
   image: https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/media/images/L1_028037_19720725_B654_firstlight.jpg?itok=4Co5IoUk
   ass: Assignment 02
-  ass_path: ../assignments/assignment02
+  ass_path: ../coursework/assignments/assignment02
   read: <i>Pixelated places</i>
   read_path: https://leventhalmap.org/exhibitions/digital-exhibitions/processing-place
   slides_path:

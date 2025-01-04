@@ -1,18 +1,81 @@
-<div class="fullwidth">
+<div class="fullwidth hero">
 
-# CLS 125: Introduction to Geospatial Humanities
+<h1>CLS 125: Introduction to Geospatial Humanities</h1>
 
-This is the website for the Spring 2025 course CLS 125: Introduction to Geospatial Humanities, taught at [Tufts University](https://tufts.edu) by [Ian Spangler](https://itspangler.com).
-
-![image](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:bg25b502h/1101,1034,4797,3722/1200,/0/default.jpg)
-*"Antoine's portal," by [Lawrence F. Sykes (1990)](https://www.digitalcommonwealth.org/search/commonwealth:sx61h935z)*
-
+*This is the website for the Spring 2025 course CLS 125: Introduction to Geospatial Humanities, taught at [Tufts University](https://tufts.edu) by [Ian Spangler](https://itspangler.com).*
 </div>
 
-### Useful links
+<div class="grid grid-cols-1" style="grid-auto-rows: 500px;" width="640">
+  <div class="card" id="map" style="padding: 0">
+  </div>
+</div>
 
-* <a href="https://canvas.tufts.edu/courses/63026" target="blank"><img src="https://img.shields.io/badge/canvas page for this course-e23e28"></a>
+```js
+import { WarpedMapLayer } from "npm:@allmaps/leaflet@1.0.0-beta.39";
 
-* <a href="https://sites.tufts.edu/datalab/services-support/student-lab-assistants/#LASchedule" target="blank"><img src="https://img.shields.io/badge/data%20lab%20schedule-4f91cd"></a>
+const maps = await FileAttachment("data/maps.json").json();
+const tisch = await FileAttachment("assets/tisch.svg").text();
+const center = [42.4062039,-71.1188766];
 
-* <a href="" target="blank"><img src="https://img.shields.io/badge/a third link-FFC0CB"></a>
+const map = L.map("map", {
+  center,
+  zoom: 15,
+});
+
+const tischIcon = L.divIcon({
+  html: tisch,
+  className: "icon",
+  iconSize: [100, 100],
+});
+
+const tischMarker = L.marker(center, { icon: tischIcon })
+  .bindPopup(
+    `<p>
+      <b>Tisch Library</b><br>
+      35 Professors Row<br>
+      Medford, MA 02155<br>
+    </p>
+    `
+  )
+  .addTo(map);
+
+const overlays = {};
+
+const makeWarpedMapLayer = async (item) => {
+  const attribution = `<a target="_blank" href="${item.url}">${item.collection}</a>`;
+  const layer = new WarpedMapLayer(null, {
+    attribution,
+  });
+  const ids = await layer.addGeoreferenceAnnotation(item.annotationData);
+  layer.setMapsTransformationType(ids, "polynomial");
+  return layer;
+};
+
+const warpedMapLayers = await Promise.all(
+  maps.map((item) =>
+    makeWarpedMapLayer(item).then((warpedMapLayer) => ({
+      ...item,
+      warpedMapLayer,
+    }))
+  )
+);
+
+for (const layer of warpedMapLayers) {
+  const title = `<i>${layer.year}</i>`;
+  overlays[title] = layer.warpedMapLayer;
+}
+
+const layerControl = L.control.layers(overlays, null, { collapsed: false });
+
+const getRandomInt = (max) => Math.floor(Math.random() * max);
+const index = getRandomInt(maps.length - 1);
+const initialLayer = Object.entries(overlays)[index][1];
+
+initialLayer.addTo(map);
+layerControl.addTo(map);
+
+// Force initial render...
+setTimeout(() => {
+  initialLayer._update();
+}, "1000");
+```

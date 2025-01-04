@@ -1,0 +1,88 @@
+[
+    {
+      "title": "activity",
+      "number": 1,
+      "name": "What is a map?",
+      "skills": [
+        "asdf", "qwert"
+      ]
+    },
+    {
+      "title": "activity",
+      "number": 2,
+      "name": "Ancient places",
+      "skills": ""
+    },
+    {
+      "title": "activity",
+      "number": 3,
+      "name": "Counting people",
+      "skills": ""
+    },
+    {
+      "title": "activity",
+      "number": 4,
+      "name": "FP proposal",
+      "skills": ""
+    },
+    {
+      "title": "activity",
+      "number": 5,
+      "name": "Spatial statistics",
+      "skills": ""
+    },
+    {
+      "title": "activity",
+      "number": 6,
+      "name": "NLP for GIS",
+      "skills": ""
+    },
+    {
+      "title": "lab",
+      "number": 1,
+      "name": "Assessing the terrain",
+      "skills": ""
+    },
+    {
+      "title": "lab",
+      "number": 2,
+      "name": "Slave voyages",
+      "skills": ""
+    },
+    {
+      "title": "lab",
+      "number": 3,
+      "name": "Lighthouses and empires",
+      "skills": ""
+    },
+    {
+      "title": "lab",
+      "number": 4,
+      "name": "Language, reconstructed",
+      "skills": ""
+    },
+    {
+      "title": "assignment",
+      "number": 1,
+      "name": "Geohumanities",
+      "skills": ""
+    },
+    {
+      "title": "assignment",
+      "number": 2,
+      "name": "WITCHCRAFT!",
+      "skills": ""
+    },
+    {
+      "title": "assignment",
+      "number": 3,
+      "name": "Parking lots",
+      "skills": ""
+    },
+    {
+      "title": "assignment",
+      "number": 4,
+      "name": "FP draft",
+      "skills": ""
+    }
+]
