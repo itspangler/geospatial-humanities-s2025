@@ -10,7 +10,6 @@ caption goes here
 </figcaption>
 </figure>
 
-
 ## Introduction
 
 In this class, you'll gain the bread and butter technical skills that are required for geospatial projects. Unlike typical geographic information systems or "GIS" classes, however, we are focused primarily on humanistic inquiry. In this first assignment, 

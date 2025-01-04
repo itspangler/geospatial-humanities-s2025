@@ -99,8 +99,6 @@ function rendertable(data, part) {
         const slides =
             item.slides_path ?
             `<span class="abstract"><a href="${item.slides}" target="blank" class="fa-solid fa-person-chalkboard"></a></span>` : `<span class="abstract"><i class="gray fa-solid fa-person-chalkboard"></i></span>`;
-        const work=[]
-        const reading=[]
         
         sched.innerHTML = `
         <td class="abstract smaller">

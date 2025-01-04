@@ -2,7 +2,7 @@
   id: act-01
   subtitle: What is a map?
   assigned: 01/21
-  due: 01/21
+  due: 01/22
   image: https://pleiades.stoa.org/img/coverage.png
   description: 'Maps will form a big part of our inquiry and practice this semester—but what exactly are they?'
   actpath: coursework/activities/activity01/what-is-a-map
@@ -14,7 +14,7 @@
   id: act-02
   subtitle: Ancient places
   assigned: 02/04
-  due: 02/11
+  due: 02/12
   image: https://pleiades.stoa.org/img/coverage.png
   description: Plot XY data and troubleshoot coordinate systems using the Pleiades gazetteer
   actpath: coursework/activities/activity02/mapping-ancient-places
@@ -27,7 +27,7 @@
   id: act-03
   subtitle: Counting people
   assigned: 02/18
-  due: 02/25
+  due: 02/26
   image: https://pleiades.stoa.org/img/coverage.png
   description: Join descriptive information to spatial data based on common identifiers
   actpath: coursework/activities/activity03/historical-population
@@ -39,7 +39,7 @@
   id: act-04
   subtitle: FP proposal
   assigned: 03/11
-  due: 03/25
+  due: 03/26
   image: https://pleiades.stoa.org/img/coverage.png
   description: Hand in a proposal for your final project topic
   actpath: coursework/activities/activity04/fp-proposal
@@ -51,7 +51,7 @@
   id: act-05
   subtitle: "Spatial statistics"
   assigned: 03/25
-  due: 04/08
+  due: 04/09
   image: https://pleiades.stoa.org/img/coverage.png
   description: Work through core principles of spatial statistics through Mesoamerican archaeology
   actpath: coursework/activities/activity05/spatial-statistics
@@ -63,7 +63,7 @@
   id: act-06
   subtitle: "NLP for GIS"
   assigned: 04/08
-  due: 04/15
+  due: 04/16
   image: https://pleiades.stoa.org/img/coverage.png
   description: Test the basics of natural language processing for geohumanities
   actpath: coursework/activities/activity06/nlp-for-gis

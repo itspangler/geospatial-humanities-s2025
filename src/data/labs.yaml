@@ -2,7 +2,7 @@
   id: lab-01
   subtitle: Assessing the terrain
   assigned: 01/21
-  due: 01/28
+  due: 01/29
   description: Get started with geographic information systems for humanistic inquiry
   labpath: ./coursework/labs/lab01/assessing-the-terrain
   status: available
@@ -13,7 +13,7 @@
   id: lab-02
   subtitle: Slave voyages
   assigned: 02/11
-  due: 02/18
+  due: 02/19
   description: Explore the geographies of capitalism and slavery through a detailed dataset of enslaved peoples' voyages
   labpath: ./coursework/labs/lab02/slave-voyages
   status: unavailable
@@ -24,7 +24,7 @@
   id: lab-03
   subtitle: Lighthouses and empires
   assigned: 02/25
-  due: 03/04
+  due: 03/05
   description: Visualize relationships between imperial power and the built environment
   labpath: ./coursework/labs/lab03/lighthouses
   status: unavailable
@@ -35,7 +35,7 @@
   id: lab-04
   subtitle: Language, reconstructed
   assigned: 03/18
-  due: 04/01
+  due: 04/02
   description: Estimate the migration patterns of speakers of an early language
   labpath: ./coursework/labs/lab04/indo-european
   status: unavailable

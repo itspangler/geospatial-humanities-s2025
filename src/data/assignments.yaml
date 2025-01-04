@@ -1,7 +1,7 @@
 - title: Assignment 1
   id: ass-01
   subtitle: Geohumanities
-  assigned: 01/28
+  assigned: 01/29
   due: 02/04
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:st74fc431/full/pct:25/0/bitonal.jpg
   description: Reflect on the geospatial humanities
@@ -14,7 +14,7 @@
   id: ass-02
   subtitle: WITCHCRAFT!
   assigned: 02/18
-  due: 02/25
+  due: 02/26
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:3f462v56m/693,1395,4227,2204/1200,/0/default.jpg
   description: Inhabit the mindset of a cartographically propagandistic Scottish peasant
   asspath: coursework/assignments/assignment02/witchcraft
@@ -26,7 +26,7 @@
   id: ass-03
   subtitle: Parking lots
   assigned: 03/11
-  due: 03/25
+  due: 03/26
   image: https://iiif.bc.edu/iiif/2/LS-JB-ND-2.jp2/163,386,3497,2284/600,/0/default.jpg
   description: Study change over time through asphalt and old maps
   asspath: ./coursework/assignments/assignment03/parking-lot-cemeteries
@@ -38,7 +38,7 @@
   id: ass-04
   subtitle: "FP draft"
   assigned: 04/01
-  due: 04/08
+  due: 04/23
   image: https://upload.wikimedia.org/wikipedia/commons/3/3e/Yamna03.jpg
   description: Submit a draft of your final project
   asspath: ./coursework/assignments/assignment04/fp-draft

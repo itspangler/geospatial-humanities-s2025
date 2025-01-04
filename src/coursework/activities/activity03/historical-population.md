@@ -1,30 +1,7 @@
-```js
-const images = document.querySelectorAll('figure img');
-images.forEach(img => {
-    img.style.cursor = 'pointer';
-    img.addEventListener('click', () =>{
-        window.open(img.src, '_blank');
-    })
-})
+<script type="module" src="../../../assets/js/script.js"></script>
 
-let count = 1;
-const questions = document.querySelectorAll('.q');
-questions.forEach(q => {
-    const id = `q-${count}`;
-    q.id = id;
-    const header = document.createElement("h4");
-    header.textContent = `QUESTION ${count}`;
-    const link = document.createElement("a");
-    link.href = `#${id}`;
-    link.appendChild(header);
-    q.insertBefore(link, q.firstChild);
-    count++;
-});
-```
-
-# Activity 02: Historic population 
-
-##### Understanding quantitative cartography and interpolated sources with historic population data
+# Activity 03: Historic population 
+##### *Exploring demographic change over time*
 
 | ![africa](https://tile.loc.gov/image-services/iiif/service:gmd:gmd8:g8200:g8200:ct001451/full/1200,/0/default.jpg) |
 | :----------------------------------------------------------------------------------------------------------------: |

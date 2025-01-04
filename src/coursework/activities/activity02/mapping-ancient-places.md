@@ -1,28 +1,6 @@
-```js
-const images = document.querySelectorAll('figure img');
-images.forEach(img => {
-    img.style.cursor = 'pointer';
-    img.addEventListener('click', () =>{
-        window.open(img.src, '_blank');
-    })
-})
+<script type="module" src="../../../assets/js/script.js"></script>
 
-let count = 1;
-const questions = document.querySelectorAll('.q');
-questions.forEach(q => {
-    const id = `q-${count}`;
-    q.id = id;
-    const header = document.createElement("h4");
-    header.textContent = `QUESTION ${count}`;
-    const link = document.createElement("a");
-    link.href = `#${id}`;
-    link.appendChild(header);
-    q.insertBefore(link, q.firstChild);
-    count++;
-});
-```
-
-# Activity 01: Mapping ancient places
+# Activity 02: Mapping ancient places
 
 ##### *Use a gazetteer of the ancient world to make sense of XY data and coordinate systems*
 

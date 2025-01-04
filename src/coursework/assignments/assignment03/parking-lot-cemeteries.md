@@ -1,3 +1,5 @@
+<script type="module" src="../../../script.js"></script>
+
 # **Assignment 03: Parking lot cemeteries** <!-- omit in toc -->
 
 | ![mass](./images/image002.png) |
