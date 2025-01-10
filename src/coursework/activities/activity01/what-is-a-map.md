@@ -2,5 +2,5 @@
 
 # Activity 01: What is a map?
 
-##### *It's not as straightforward as you might think*
+##### *The answer's not as straightforward as you might think*
 

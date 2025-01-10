@@ -120,7 +120,7 @@ We measure locations on the earth's surface in **coordinates**, most often descr
 
 Sometimes you'll need to convert from one to the other. If you're ambitious, you can make those conversions [by hand](https://manoa.hawaii.edu/exploringourfluidearth/physical/world-ocean/locating-points-globe/compare-contrast-connect-converting-decimal-degrees), but in these cases I prefer to use an [online lat-long converter](https://www.latlong.net/lat-long-dms.html). Converted from lat-long to DMS, the first record in our `places.csv` would be `46° 37' 6.96" N, 1° 8' 43.08" E`.
 
-### Coordinate systems
+## Coordinate systems
 
 We're speaking in terms of coordinates because when flattened out, the world essentially becomes a big coordinate **grid**.
 
@@ -149,7 +149,7 @@ The X and Y axes meet at the grid's **origin**, and all other locations on the g
 
 You'll most commonly encounter two kinds of coordinate systems when working with geospatial data: **geographic coordinate systems** and **projected coordinate systems**. They're closely related, but distinguishing them is really important.
 
-#### Geographic coordinate systems
+### Geographic coordinate systems
 
 
 <figure>
@@ -170,7 +170,7 @@ A **geographic coordinate systems (GCS)** defines positions on the surface of th
 | Nominal Mean Angular Velocity of the Earth                              | ω            | 7292115 x 10<sup>-11</sup> radians/second                          |
 | Geocentric gravitational constant (Mass of Earth's atmosphere included) | GM           | 3.986004418 x 10<sup>14</sup> meter<sup>3</sup>/second<sup>2</sup> |
 
-#### Projected coordinate systems
+### Projected coordinate systems
 
 <figure>
 
@@ -185,7 +185,7 @@ A **projected coordinate system (PCS)** defines how to display that lumpy, oblat
 
 <span class="math bigger">T(ϕ, θ) = (θ, ln(|sec(ϕ) + tan(ϕ)|))</math>
 
-### **Managing coordinate systems in ArcGIS Pro**
+### Managing coordinate systems in ArcGIS Pro
 
 I'm only throwing this fancy math at you to highlight the distinctions between the two kinds of coordinate systems – *not* because you need to know the fancy math in order to do geospatial humanistic work.
 
@@ -195,7 +195,7 @@ Here's a table highlighting differences:
 
 |                                | **It represents...**                | **It uses...**                  | **Examples include...**     |
 | ------------------------------ | --------------------------- | ---------------------------- | ---------------- |
-| *Geographic coordinate system* | Globe (e.g., the territory) | Degree units (e.g., 40° W)   | `WGS84`, `NAD27`     |
+| *Geographic coordinate system* | Globe (e.g., the territory) | Degree units (e.g., 40° W)   | WGS84, NAD27     |
 | *Projected coordinate system*  | Places (e.g., the map)      | Linear units  (e.g., meters) | Mercator, Peters |
 
 </div>
@@ -206,7 +206,7 @@ You can view project-wide information about GCS and PCS by `right-clicking` the 
 
 You can view layer-specific information about GCS and PCS by `right-clicking` an individual layer ➡️ `Properties` ➡️ `Source` ➡️ "Spatial reference."
 
-## **Loading tabular data as points in ArcGIS Pro**
+## Loading tabular data as points in ArcGIS Pro
 
 Under the **Map** tab in the banner, select `Add Data` ➡️ `XY Point Data`. This will open the **XY Table to Point** geoprocessing tool. (There are always multiple ways to do a thing in ArcGIS Pro; note that you could also access this tool by searching for it in the geoprocessing toolbox.)
 
@@ -221,13 +221,16 @@ In your tool, set the parameters to:
 
 Click `Run` and you should see this:
 
+<figure>
+
 ![xy](images/image011.png)
+</figure>
 
 Nice!
 
 Now we've got a full-fledged feature class containing 40,000 points of ancient places, plotted from a humble `csv`. That said, it's kind of difficult to make sense of all this...
 
-# **Querying Pleiades data to find simple patterns**
+## Querying Pleiades data to find simple patterns
 
 ... so let's see if we can break this data down and find any interesting patterns.
 
@@ -241,8 +244,6 @@ While the `title` field has the most obviously *mappable* information, the descr
 What if we were able to search through the entire contents of this feature class for interesting words like "mound" and "grave" and "necropolis," selecting only those features which include such terms?
 
 Wait a minute: we *can* do that!!!
-
-## **Doing that**
 
 1. At the top of the attribute table, click the **Select by Attributes** button. It will open a little dialog box.
 2. You can leave the Input Rows and Selection Type parameters as they are.
@@ -261,30 +262,29 @@ Wait a minute: we *can* do that!!!
 7. `Right-click` on the "pleiades_places" layer in your **Contents** pane and choose "Zoom to layer." This is a really handy shortcut for snapping a data layer to full screen in your map view.
 8. Just eyeballing it, do you notice any patterns in how the blue points are distributed?
 
-## **Doing more of that**
-
 Take a moment to do more of that. Test out a couple of other keywords in your query. Replace "mound" if you want. Once you've found a few that you like, combine them with the "Add Clause" button in the **Select by Attributes** interface. **You should choose at least 3 queries in total**. Be conscious of how you're using [boolean operators](https://researchguides.library.tufts.edu/hsl-advanced-searching); for example, if you string together multiple queries using `AND`, you'll likely end up with few or zero results.
 
 While you're at it, toggle the SQL button ![sqlbutton](images/image015.png) on and off to see how your queries are actually being composed behind the scenes. Eventually, you'll probably find it just as easy – if not easier – to type these kinds of queries out manually than to select them using an interface.
 
 Note that if your attribute table is set to only "Show Selected Records," you won't see the Select by Attributes tool.
 
-> [![q]][l] 
-> 1. Paste your full SQL query, as it appears in the dialog when you toggle the SQL button on.
-> 2. Describe in 2-3 sentences the geographical distribution of the selected points (e.g., where they are clustered).
+<div class="q">
 
-# **Troubleshooting the grid**
+Paste your full SQL query, as it appears in the dialog when you toggle the SQL button on. Describe in 2-3 sentences the geographical distribution of the selected points (e.g., where they are clustered).
+</div>
 
-## **Tissot's indicatrix**
+## Troubleshooting the grid
 
-![tissot](images/image017.gif)
+asdf
 
-[Tissot's indicatrix](https://en.wikipedia.org/wiki/Tissot%27s_indicatrix) is a grid of *equidistantly placed* and *congruently sized* lines and circles. Overlaying it on maps helps visualize local distortion of different projections, as the [gif above of Jason Davies' tool](https://www.jasondavies.com/maps/tissot/) demonstrates. Take a moment to open his tool and drag your cursor around in it.
+### Tissot's indicatrix
 
 <figure>
-<iframe class="scaledown" src="https://www.jasondavies.com/maps/tissot/"></iframe>
-<figcaption>Jason Davies' Tissot circles visualization tool</figcaption>
+
+![tissot](images/image017.gif)
 </figure>
+
+[Tissot's indicatrix](https://en.wikipedia.org/wiki/Tissot%27s_indicatrix) is a grid of *equidistantly placed* and *congruently sized* lines and circles. Overlaying it on maps helps visualize local distortion of different projections, as the [gif above of Jason Davies' tool](https://www.jasondavies.com/maps/tissot/) demonstrates. Take a moment to open his tool and drag your cursor around in it.
 
 There are four properties of cartographic distortion: **area**, **distance**, **shape**, and **direction (or azimuth)**. Different projection types account for these distortions, always minimizing some at the expense of maximizing others. See below:
 
@@ -296,7 +296,7 @@ There are four properties of cartographic distortion: **area**, **distance**, **
 | Azimuthal       | Direction         | Stereographic |
 | Compromise      | Nothing!          | Robinson      |
 
-Penn State has some materials that do a great job of [distinguishing between these different kinds of distortion](https://www.e-education.psu.edu/natureofgeoinfo/c2_p29.html), if you want to learn more.
+Penn State has some excellent materials that do a great job of [distinguishing between these different kinds of distortion](https://www.e-education.psu.edu/natureofgeoinfo/c2_p29.html), if you want to learn more.
 
 Let's load Tissot's indicatrix into our project so we can ascertain how and where different projections distort maps.
 
@@ -308,21 +308,25 @@ Let's load Tissot's indicatrix into our project so we can ascertain how and wher
 
 When you're done you should see something like this (ensure that the Pleiades data is on top):
 
+<figure>
+
 ![tissotarc](images/image018.png)
+</figure>
 
 What's happening here?
 
-As [Aileen Buckley](https://www.esri.com/arcgis-blog/products/product/mapping/tissots-indicatrix-helps-illustrate-map-projection-distortion/?rmedium=redirect&rsource=blogs.esri.com/esri/arcgis/2011/03/24/tissot-s-indicatrix-helps-illustrate-map-projection-distortion) has summarized in this Esri blog post, web mercator is an **conformal projection.** That means is preserves shape, but significantly distorts area. As a result, our Tissot circles all stay circular, but some are much bigger looking than others (hence the [Mercator projection's famous inflation of Greenland to appear as large as Africa](https://www.youtube.com/watch?v=OH1bZ0F3zVU)). 
+As [Aileen Buckley](https://www.esri.com/arcgis-blog/products/product/mapping/tissots-indicatrix-helps-illustrate-map-projection-distortion/?rmedium=redirect&rsource=blogs.esri.com/esri/arcgis/2011/03/24/tissot-s-indicatrix-helps-illustrate-map-projection-distortion) has summarized in this Esri blog post, web mercator is a **conformal projection.** That means is preserves shape, but significantly distorts area. As a result, our Tissot circles all stay circular, but some are much bigger looking than others (hence the [Mercator projection's famous inflation of Greenland to appear as large as Africa](https://www.youtube.com/watch?v=OH1bZ0F3zVU)). 
 
 If you wanted to measure the circumference of any of these circles – or if you ran [Calculate Geometry](https://support.esri.com/en-us/knowledge-base/how-to-calculate-geometry-in-arcgis-pro-000016157) on the "caps" layer – you'd see that the size of each cap is indeed the same, despite the differences in their appearances. Give it a try with the measure tool, if you want (but be sure to set the measurement type to "Geodesic").
 
-> [![ec]][l]
->
-> **For 5 points extra credit**: in a few sentences, explain why the "Geodesic" measurement is so different from the "Planar" measurement (for full credit, you should define each of those things).
+<!-- <div class="aside">
+
+**For 1 point extra credit**: in a few sentences, explain why the "Geodesic" measurement is so different from the "Planar" measurement (for full credit, you should define each of those things).
+</div> -->
 
 Feel free to reset the projection by `Right-clicking` the "Map" ➡️ "Coordinate Systems" ➡️ choose a different one. What's being distorted? What's being preserved?
 
-## **Setting locally appropriate projections**
+### Setting locally appropriate projections
 
 Back to Pleiades...
 
@@ -332,23 +336,24 @@ In order to determine the "right" projection – and there is often more than o
 
 When you make these changes at the **Map** level, you're not actually manipulating the underlying spatial data: ArcGIS Pro is just reprojecting it "[on the fly](https://www.esri.com/arcgis-blog/products/arcgis-pro/mapping/projection-on-the-fly-and-geographic-transformations/)." If you wanted to reproject the data itself, you'd have to use the **[Project](https://pro.arcgis.com/en/pro-app/latest/tool-reference/data-management/project.htm)** tool.
 
-> [![q]][l] 
-> 
-> 3. Choose four places from the table below and imagine you're making a map in each of them. Using the **Map** properties tab, choose a suitable projection for each map. As you do, [take a screenshot](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) of ArcGIS Pro with the proper projection set and zoomed into the area of interest. Then, write down the following information:
->     * Projection name
->     * Linear unit
->     * In 1-2 sentences, describe the parts of the world (e.g., the poles, specific countries) that this projection appears to distort the most.
-> 
->     | Large scale  |    Medium scale     |  Small scale   |
->     | :----------: | :-----------------: | :------------: |
->     | Vatican City |       Greece        |  North Africa  |
->     |    Cairo     |   Southern India    | Eastern Europe |
->     |  Jerusalem   |  Northern Baghdad   | Western Europe |
->     |   Baghdad    |       Algeria       |     India      |
->     |  Siem Reap   | Strait of Gibraltar |  Middle East   |
->     |   Baghdad    |        Egypt        |     Russia     |
+<div class="q">
 
-# **Submit**
+Choose four places from the table below and imagine you're making a map in each of them. Using the **Map** properties tab, choose a suitable projection for each map. As you do, [take a screenshot](https://support.microsoft.com/en-us/windows/use-snipping-tool-to-capture-screenshots-00246869-1843-655f-f220-97299b865f6b) of ArcGIS Pro with the proper projection set and zoomed into the area of interest. Then, write down the following information:
+* Projection name
+* Linear unit
+* In 1-2 sentences, describe the parts of the world (e.g., the poles, specific countries) that this projection appears to distort the most.
+
+| Large scale  |    Medium scale     |  Small scale   |
+| :----------: | :-----------------: | :------------: |
+| Vatican City |       Greece        |  North Africa  |
+|    Cairo     |   Southern India    | Eastern Europe |
+|  Jerusalem   |  Northern Baghdad   | Western Europe |
+|   Baghdad    |       Algeria       |     India      |
+|  Siem Reap   | Strait of Gibraltar |  Middle East   |
+|   Baghdad    |        Egypt        |     Russia     |
+</div>
+
+## Submit
 
 When you're finished, go ahead and submit your Word document – which should just include some screenshots and brief descriptions of your SQL queries and projection choices – to Canvas.
 

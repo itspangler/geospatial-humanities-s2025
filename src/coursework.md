@@ -155,11 +155,6 @@ function rendertable(data, part) {
         container.appendChild(table);
   });
 
-  function maketags() {
-    data.forEach(item => {
-        console.log(item.tags)
-    }) 
-  }
 }
 
 maketable(activities, "actcontainer");
