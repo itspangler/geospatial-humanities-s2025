@@ -7,15 +7,9 @@ toc: true
 
 # Schedule
 
-Each week is comprised of up to five kinds of materials. Unless otherwise noted, coursework and readings are due on the week that they are listed in the syllabus.
+Each week is comprised of up to five kinds of materials: readings, slides, activities, labs, and assignments. There's a final project in this class. There are no exams.
 
 ## Course content
-
-<div class="aside">
-
-Note that presentation/due dates for the required [curatorial introduction activity](curations) and the [final project](final) are not represented in this schedule.
-
-</div>
 
 * **[Readings](#course-bibliography)** (<i class="fa-solid fa-book smaller"></i>): You should read any assigned reading *before* we meet for class that week.
 
@@ -35,14 +29,17 @@ In general, coursework and readings will follow a weekly submission pattern that
 const data = await FileAttachment("data/schedule.csv").csv()
 console.log(data)
 view(Inputs.table(data, {
-    width:"640px",
     disabled: "true"
     }))
 ```
 
+Typically, work will be assigned in class and due on the following week. This means you'll usually have 8 days to complete an activity, lab, or assignment.
+
 ## Detailed course outline
 
-A detailed outline of the entire course is below. It's subject to change as the semester progresses. Some weeks are heavy with content. Others are light. The front half of the term (pre-spring recess) is heavier with readings and labs, while the second half of the term reserves more space for final projects. Use the schedule to plan accordingly:
+The front half of the term (pre-spring recess) is heavier with readings and labs, while the second half of the term reserves more space for final projects. Use the schedule to plan accordingly.
+
+This outline is subject to change as the semester progresses:
 
 <div class="headless noselect">
     <table>
@@ -55,6 +52,7 @@ A detailed outline of the entire course is below. It's subject to change as the 
                 <th>Activity</th>
                 <th>Lab</th>
                 <th>Assignment</th>
+                <th>Final</th>
             </tr>
         </thead>
         <tbody id="tablecontainer">
@@ -86,19 +84,21 @@ function rendertable(data, part) {
 
         const act =
             item.act ?
-            `<b class="abstract "><a href="${item.act}" target="blank" class="fa-solid fa-pen icon"></a></b>` : `<b class="abstract gray"><i class="fa-solid fa-pen"></i></b>`;
+            `<b class="abstract"><a href="coursework#activities" target="blank" class="fa-solid fa-pen icon"></a></b>` : `<b class="abstract gray"><i class="fa-solid fa-pen"></i></b>`;
         const lab =
             item.lab ?
-            `<b class="abstract"><a href="${item.lab}" target="blank" class="fa-solid fa-computer icon"></a></b>` : `<b class="abstract gray"><i class="fa-solid fa-computer"></i></b>`;
+            `<b class="abstract"><a href="coursework#labs" target="blank" class="fa-solid fa-computer icon"></a></b>` : `<b class="abstract gray"><i class="fa-solid fa-computer"></i></b>`;
         const ass =
             item.ass ?
-            `<b class="abstract"><a href="${item.ass}" target="blank" class="fa-solid fa-compass-drafting icon"></a></b>` : `<b class="abstract gray"><i class="fa-solid fa-compass-drafting"></i></b>`;
+            `<b class="abstract"><a href="coursework#assignments" target="blank" class="fa-solid fa-compass-drafting icon"></a></b>` : `<b class="abstract gray"><i class="fa-solid fa-compass-drafting"></i></b>`;
         const read =
             item.read ?
             `<span class="abstract"><a href="${item.read}" target="blank" class="fa-solid fa-book icon"></a></span>` : `<span class="abstract"><i class="gray fa-solid fa-book"></i></span>`;
         const slides =
             item.slides_path ?
             `<span class="abstract"><a href="${item.slides}" target="blank" class="fa-solid fa-person-chalkboard"></a></span>` : `<span class="abstract"><i class="gray fa-solid fa-person-chalkboard"></i></span>`;
+        const fp =
+            item.fp ? `<span class="abstract"><a href="${item.fp}" target="blank" class="fa-solid fa-diagram-project"></a></span>` : `<span class="abstract"><i class="gray fa-solid fa-diagram-project"></i></span>`
         
         sched.innerHTML = `
         <td class="abstract smaller">
@@ -130,6 +130,9 @@ function rendertable(data, part) {
         </td>
         <td>
             ${ass}
+        </td>
+        <td>
+            ${fp}
         </td>
         `;
         tablecontainer.appendChild(sched);

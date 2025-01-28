@@ -1,14 +1,14 @@
 - title: Activity 1
   id: act-01
-  subtitle: What is a map?
-  assigned: 01/21
-  due: 01/22
+  subtitle: Data in the humanities
+  assigned: 01/28
+  due: 02/05
   image: https://pleiades.stoa.org/img/coverage.png
-  description: 'Maps will form a big part of our inquiry and practice this semester—but what exactly are they?'
-  actpath: coursework/activities/activity01/what-is-a-map
-  status: available
+  description: 'What exactly are we talking about when we talk about humanities "data?"'
+  actpath: coursework/activities/activity01/data-in-the-humanities
   tags: ['epistemology', 'cartography', 'maps']
-  submit: ''
+  submit: 'https://canvas.tufts.edu/courses/63026/assignments/491655'
+  status: available
 
 - title: Activity 2
   id: act-02
@@ -18,10 +18,10 @@
   image: https://pleiades.stoa.org/img/coverage.png
   description: Plot XY data and troubleshoot coordinate systems using the Pleiades gazetteer
   actpath: coursework/activities/activity02/mapping-ancient-places
-  status: available
   tags: ['plot xy data', 'coordinate systems', 'projections', 'attribute table queries']
   discard: ''
   submit: ''
+  # status: available
 
 - title: Activity 3
   id: act-03
@@ -31,9 +31,9 @@
   image: https://pleiades.stoa.org/img/coverage.png
   description: Join descriptive information to spatial data based on common identifiers
   actpath: coursework/activities/activity03/historical-population
-  status: available
   tags: ['table join', ]
   submit: ''
+  # status: available
 
 - title: Activity 4
   id: act-04
@@ -43,9 +43,9 @@
   image: https://pleiades.stoa.org/img/coverage.png
   description: Hand in a proposal for your final project topic
   actpath: coursework/activities/activity04/fp-proposal
-  status: available
   tags: ['']
   submit: ''
+  # status: available
 
 - title: Activity 5
   id: act-05
@@ -55,9 +55,9 @@
   image: https://pleiades.stoa.org/img/coverage.png
   description: Work through core principles of spatial statistics through Mesoamerican archaeology
   actpath: coursework/activities/activity05/spatial-statistics
-  status: available
   tags: ['']
   submit: ''
+  # status: available
 
 - title: Activity 6
   id: act-06
@@ -67,6 +67,6 @@
   image: https://pleiades.stoa.org/img/coverage.png
   description: Test the basics of natural language processing for geohumanities
   actpath: coursework/activities/activity06/nlp-for-gis
-  status: available
   tags: ['']
   submit: ''
+  # status: available

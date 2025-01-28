@@ -1,10 +1,18 @@
-<script type="module" src="../../../script.js"></script>
+<script type="module" src="../../../assets/js/script.js"></script>
+<script type="module">
+  const scriptUrl = new URL('_import/assets/js/script.f6e5b1ef.js', import.meta.url).href;
+  import(scriptUrl).then(module => {
+    module.images();
+  })
+</script>
 
-# Lab 01: Assessing the terrain
+# Lab 01: Assessing the terrain <!-- omit in toc -->
+
+<div class="intro">
 
 [![alt text](images/image.png)](https://credo.library.umass.edu/view/zoom/mufs001-xn-i0714)
 
-This lab walks through the process of creating a basic map using ArcGIS Pro and data from the [Ancient World Mapping Center](https://awmc.unc.edu/) (AWMC). It is broken into five sections:
+*This lab walks through the process of creating a basic map using ArcGIS Pro and data from the [Ancient World Mapping Center](https://awmc.unc.edu/) (AWMC). It is broken into five sections:*
 
 <ol class="circle-list">
 <li>Preparing your workspace</li>
@@ -14,16 +22,41 @@ This lab walks through the process of creating a basic map using ArcGIS Pro and 
 <li>Creating your layout</li>
 </ol>
 
-By the end of the lab, you'll produce a map that resembles...
-
-By **Tuesday, January 28 at 11:59pm**, submit to Canvas:
+By **Wednesday, January 29 at 11:59pm**, [submit to Canvas](#6-questions-and-deliverables):
 
 * your map, exported in `.png` format
 * answers to the questions in <span style="border: dotted 2px #47a954;background-color:#d8fedd;font-family:monospace;font-size:0.8em;padding:0.2em;">green boxes</span>, compiled and submitted in a `.doc`, `.odf`, or `.pdf` file
 
+<details class="noselect">
+<summary><i>Full table of contents</i></summary>
+
+- [Preparing your workspace](#preparing-your-workspace)
+  - [Choosing a workspace location](#choosing-a-workspace-location)
+  - [Option A: Manually set up a workspace](#option-a-manually-set-up-a-workspace)
+  - [Option B: Let ArcGIS Pro set up your workspace](#option-b-let-arcgis-pro-set-up-your-workspace)
+- [Downloading your data](#downloading-your-data)
+- [Understanding your interface](#understanding-your-interface)
+  - [Project tab](#project-tab)
+  - [The Ribbon](#the-ribbon)
+  - [Catalog pane](#catalog-pane)
+  - [Contents pane](#contents-pane)
+  - [Map view](#map-view)
+    - [Attributes](#attributes)
+    - [Symbology](#symbology)
+  - [Command search box](#command-search-box)
+- [Making your map](#making-your-map)
+  - [Specifications](#specifications)
+  - [Example map](#example-map)
+- [Questions \& deliverables](#questions--deliverables)
+- [Submit](#submit)
+
+</details>
+  
+</div>
+
 <div class="question">
 
-## 1. Preparing your workspace
+## Preparing your workspace
 
 Before starting a mapping project, you <span class="key">must</span> set up a workspace. By "workspace," I mean a dedicated folder on your computer where you'll store your project files. Creating a sensible workspace structure is a love letter to your future self. By the end of the term, you will have downloaded many gigabytes of spatial data, created at least a dozen ArcGIS Pro projects, and produced hundreds—maybe even thousands—of derivative spatial data files. Practicing disciplined file organization from the start is an important part of setting yourself up for success in this course (and in any situation where you're working with lots of files).
 
@@ -46,7 +79,7 @@ The `H: Drive` is recommended because it provides easily accessible, stable clou
 If you plan to use the `H: drive` on a personal computer, you have to manually connect to it.</p>
 <p>
 
-Follow [these instructions to map your `H: drive`](https://sites.tufts.edu/datalab/accounts-network-drives-windows10/) on your personal computer.</p></details>
+Follow [these instructions to map your `H: drive`](https://canvas.tufts.edu/courses/63026/pages/data-lab-resources?module_item_id=1589931) on your personal computer.</p></details>
 </div>
 
 Once you've chosen a workspace location, you can proceed to actually setting up the workspace structure.
@@ -136,7 +169,12 @@ To manually set up a workspace:
     The ArcGIS Pro application</figcaption>
     </figure>
 
-14. Open your workspace by clicking Windows File Explorer and navigate to your `working-maps` folder. Now, a bunch of files and folders should appear:
+14. By default, ArcGIS Pro projects load two "base map" layers: the `World Topographic Map` and the `World Hillshade`. You don't have to keep these on, but they can be a helpful reference as you orient yourself to the application. As a reference for these two default layers:
+
+    * A [topographic map](https://en.wikipedia.org/wiki/Topographic_map) is a kind of reference map displaying qualitative features like place names alongside quantitative features like elevation (usually in contour lines)
+    * A [hillshade](https://earthquake.usgs.gov/education/geologicmaps/hillshades.php) is a cartographic technique that uses elevation data to simulate the effects of the sun (e.g., shadows) in a 2-D map
+
+15. Open your workspace by clicking Windows File Explorer and navigate to your `working-maps` folder. Now, a bunch of files and folders should appear:
 
     <figure>
     <img src="images/image09.png">
@@ -168,7 +206,7 @@ Now that you've set up your workspaces, pick one of them to actually continue wo
 Why is defining a workspace important for geospatial projects? In this class, what are three possible locations where you can set up a workspace?
 </div>
 
-## 2. Downloading your data
+## Downloading your data
 
 The map you'll make in this lab is a [general purpose reference map](https://www.e-education.psu.edu/geog486/node/641), or a map that displays features of interest to your desired audience. In this case, we're imagining an audience who is interested in the geography of the ancient world. Your reference map of features in the ancient world will use data provided by the [Ancient World Mapping Center](https://awmc.unc.edu/) (AWMC).
 
@@ -212,7 +250,7 @@ When you are done, you should have 4 folders in your `downloaded-data` directory
 What are the two geospatial data formats that you downloaded?
 </div>
 
-## 3. Understanding your interface
+## Understanding your interface
 
 The ArcGIS Pro interface is pretty complex. It could take you a while to wrap your head around it. Here's the basic idea:
 
@@ -302,7 +340,7 @@ Other features in the Ribbon will become more useful when you add data to the pr
 
 13. In that folder, you should see one file: `roman_empire_ad_14_extent.shp`. Select it and click `OK` to add it to the project.
 
-14. When the data is added, your **Map view** should automatically reset to the data's extent. In this case, you are looking at the extent of the Roman Empire in the year CE (AD) 14:
+14. When the data is added, your **Map** view should automatically reset to the data's extent. In this case, you are looking at the extent of the Roman Empire in the year CE (AD) 14:
 
     <figure>
     <img src="images/image20.png">
@@ -310,7 +348,7 @@ Other features in the Ribbon will become more useful when you add data to the pr
 
     Nice! You've just added your first spatial data layer to an geospatial project. But what can you actually *do* with it?
 
-15. With the "Explore" tool active, click on one of the spatial data features in the **Map view**. You can always use the "Explore" tool to quickly inspect the characteristics of a spatial data feature. When clicked, a pop-up window should appear:
+15. With the "Explore" tool active, click on one of the spatial data features in the **Map** view. You can always use the "Explore" tool to quickly inspect the characteristics of a spatial data feature. When clicked, a pop-up window should appear:
 
     <figure>
     <img src="images/image22.png">
@@ -393,7 +431,7 @@ The **Catalog** essentially functions as a view into your computer's files. You 
    * `roman_empire_ad_117_extent`
    * `roman_empire_ad_200_extent`
 
-    As you drag and drop each of these files into the map, notice how they cascade into the **Contents** pane. You may have to reorder them 
+    As you drag and drop each of these files into the map, notice how they cascade into the **Contents** pane.
 
     Once you've done so, the project should resemble:
 
@@ -407,7 +445,7 @@ The **Catalog** essentially functions as a view into your computer's files. You 
 
 5. You can use the **Catalog** to interact with maps inside your ArcGIS Pro Project. First, unfold the "Maps" tab, and you'll see an object titled "Map." Right-click it, choose "Rename," and give it a new name—maybe something like "Reference map." (You can also rename a file by clicking it once while it's already highlighted, just like most other file explorer applications.)
 
-    Now, right click on "Maps" and choose "New map." This will create a new, empty map view, titled "Map" by default. You can rename this one too, if you want. You should now see something like this, with two tabs in your **Map** pane corresponding to two map objects in your **Catalog** pane:
+    Now, right-click on "Maps" and choose "New map." This will create a new, empty map view, titled "Map" by default. You can rename this one too, if you want. You should now see something like this, with two tabs in your **Map** pane corresponding to two map objects in your **Catalog** pane:
 
     <figure>
     <img src="images/image29.png">
@@ -437,54 +475,352 @@ The **Catalog** essentially functions as a view into your computer's files. You 
     <img src="images/image32.png" width="350">
     </figure>
 
-8. Currently, the feature class inside your geodatabase is a separate file from the layers in your map. Let's confirm this by examining their file paths, or the string of text that specifies where these files are stored on your computer.
-
-    On the layer `roman_empire_ad_14_extent` in your **Contents** pane, right-click > `Properties` > `Source`. Make note of the file path—it should begin with `H:/`—and then do the same for the feature class `roman_empire_ad_14_extent` in your `lab01` geodatabase.
+8. Currently, the feature class inside your geodatabase is a separate file from the layers in your map. Let's confirm this by examining their file paths, or the strings of text that specify where these files are stored on your computer.
 
 <div class="q">
 
-What is the data type and file path of the layer `roman_empire_ad_14_extent` in your **Contents** pane? What is the data type and file path of the similarly titled feature class in your `lab01` geodatabase?
+On the layer `roman_empire_ad_14_extent` in your **Contents** pane, right-click > "Properties" > "Source". What is the **data type** and **file path** of the layer `roman_empire_ad_14_extent` in your **Contents** pane?
+
+Now, on the similarly-named feature in the **Catalog** pane, right-click > "Properties" > "Source". What is its **data type** and **file path**?
 
 </div>
 
+When you work with spatial data files in a software like ArcGIS Pro, it's important to remember that your project—the `lab01.aprx` file in which you're currently working—doesn't save "data" directly to the project. All of the geographic features that you create, edit, and analyze are representations of *other data objects* saved in various places, such as:
+
+* the `Downloads` folder on your `C:` drive (<span class="key">very bad</span>, never do this)
+* a specified `data` folder in the project workspace of your `H:` drive (much better, <span class="key">nice!</span>)
+* a `gdb` associated with your current ArcGIS Pro project (much better, <span class="key">nice!</span>)
+
+The **Catalog** pane gives you one view into the inner workings of your `.aprx` file. In this sense, a standard ArcGIS Pro project structure kind of resembles that meme of Charlie from *It's Always Sunny* standing in front of the conspiracy board. An `.aprx` is a big, complicated pile of fragile file paths—and if you move any of the actual files themselves, the `.aprx` will break.
+
+![charlie](images/image36.jpg)
+
 ### Contents pane
 
-You've interacted with the **Contents** pane on the left-hand side of your project interface a lot already. It lists all of the data layers that you've added to your project. Right now, this should include four layers showing the historical extent of Roman Empire at four different years.
+You've interacted with the **Contents** pane on the left-hand side of your project interface a lot already.
 
-In the **Contents** pane, you can perform basic spatial data organization tasks like...
+You can use it to perform basic spatial data organization tasks like...
 
 * changing the render order of layers by clicking and dragging
 * toggling layers on and off by clicking the checked box
 * renaming layers by right-clicking > `Rename`
 
-You can also use it to access, examine, and edit critical layer properties like...
+Try each of these. Drag the layers around so that they are ordered differently. Toggle some layers on and off by checking the box. Rename a layer or two.
+
+You can also use the **Contents** pane to access, examine, and edit critical layer properties like...
 
 * a layer's attribute table
 * a layer's symbology
 * a layer's metadata
 
-Let's dwell for a moment in these layer properties.
+Right now, the **Contents** pane lists all of the data layers that you've added to your project. This should include four layers showing the historical extent of Roman Empire at four different years.
 
-1. The **Attribute Table** displays all of the qualitative and quantitative information associated with a given layer. To open it, you can right-click a layer > `Attribute Table` or select a layer and press `ctrl+T`.
+Let's add a few more.
 
-2. Open the attribute table for the layer `roman_empire_ad_200_extent` (make sure it's at the top of your "stack" of layers). You should see something like this:
+1. Using the **Catalog** pane, go ahead and add the four layers from `lab01.gdb` to the map as well. You can do so by dragging and dropping them into the **Map** view, or right-click > "Add to Current Map".
+
+2. Now 10 layers should appear in your map:
+   * Your base map layers, `World Topographic Map` and `Hillshade`
+   * Two layers each of Roman Empire extent at various years
+
+3. At the top of the **Contents** pane—that is, below the "Search" bar and above the "Drawing Order" label—you should see several icons in a horizontal row. When clicked, each of them allows you to filter layers in the **Contents** pane by different parameters.
+
+4. Click the cylinder (if you hover your cursor over it, it'll read "List By Data Source").
 
     <figure>
-    <img src="images/image34.png">
+    <img src="images/image37.png" width="400">
+    <figcaption>
+
+    List layers in contents pane by their data source
+    </figcaption>
+    </figure>
+
+5. Once clicked, the organization of the layers in your **Contents** pane will change. If you drag the **Contents** pane so that it's a little wider—and collapse all entries so that only the data *source* is showing—you should see something like this:
+
+    <figure>
+    <img src="images/image38.png">
+    <figcaption>
+
+    List layers in contents pane by their data source
+    </figcaption>
+    </figure>
+
+6. There are two important takeaways to glean from sorting the layers in this way.
+   * First, the four layers in your `lab01.gdb`—or more appropriately, the *feature classes*—all share the same source; that is, `lab01.gdb`
+   * Second, the four layers from your `downloaded-data` folder—or more appropriately, the *shapefiles*—all share a different source; that is, their parent folder
+   * Third, the two base map layers have sources that resemble URL structures, e.g., beginning with `https://`. These data layers are stored on Esri "cloud" servers and delivered via two file transfer services, respectively called [content delivery networks](https://en.wikipedia.org/wiki/Content_delivery_network) and [REST services](https://developers.arcgis.com/rest/services-reference/enterprise/get-started-with-the-services-directory/), and you don't need to know how these work but it's good to know that they exist
+
+It matters a lot that these data layers have different sources. That I'm asking you to recognize their difference might feel pedantic, but it's actually pretty critical to keeping your projects and workflows organized.
+
+When you're working on mapping projects, you <span class="key">must</span> always understand where your data layers are sourced. If you don't know this, you could make huge mistakes that waste you lots of time, progress, and even money. 
+
+Of course, we don't need two of every Roman Empire extent layer in our working map, so let's cut out one of the groups. The layers in the `downloaded-data` <span class="key">should</span> be reserved as clean copies of the original dataset; following that logic, we can remove them following this simple workflow.
+
+1. Click the top layer in the "stack" of layers sourced from `downloaded-data`
+
+2. While holding down the `shift` key, select the bottom layer in the stack (this will select all the layers in between as well)
+
+    <figure>
+    <img src="images/image39.png" width="400">
+    <figcaption>
+
+    List layers in contents pane by their data source
+    </figcaption>
+    </figure>
+
+3. On any of the layers you just selected, right-click > "Remove"
+
+4. Your layers should disappear from the **Contents** pane.
+
+5. Toggle the filter of your **Contents** pane back to "List By Drawing Order" (the icon directly to the left of the "List By Source" cylinder)
+
+Before proceeding to the next section, simplify your four data layer names. For each layer, right-click > "Rename" (or click the layer when it's already selected) and give it a simpler name, e.g., `roman_empire_ad_14_extent` > `re_14`
+
+### Map view
+
+The **Map** view is where the magic happens: this view, in the center of your project interface, displays the position of your spatial data layers on a dynamic coordinate system. You can interact with the map, and its contents, by using different commands in the "Map" tab that we discussed above (such as "Add Data" or "Explore").
+
+Two of the most important features displayed in the **Map** view are actually accessed through the **Contents** pane: *attributes*, or the descriptive information associated with geographic features, and *symbology*, or the cartographic choices associated with attributes. Let's look at each of them in turn.
+
+#### Attributes
+
+Earlier, I mentioned the "attribute table." This is one of the most important features of any geographic information system. The attribute table ties geographic features to descriptive information, allowing you to connect qualitative and quantitative observations about the world with their real-life locations. Thanks, attribute table!
+
+You can open the attribute table by interacting with layers in the **Contents** pane, but it will open in the 
+
+1. The **Attribute Table** displays all of the qualitative and quantitative information associated with a given layer. To open it, you can right-click a layer > "Attribute Table" or click on a layer and press `ctrl+T`.
+
+2. Open the attribute table for the layer `re_200`. Make sure it's sorted at the top of your "stack" of layers.
+
+3. You should see something like this:
+
+    <figure>
+    <img src="images/image41.png">
     <figcaption>
 
     The attribute table
     </figcaption>
     </figure>
 
-3. You can use the attribute table to store important qualitative and quantitative details about the geometric features represented on the map. Each feature in the map corresponds to a row in the attribute table. You can "Select" an entire row by clicking the empty white spot on the left of the row. This will highlight the whole row in blue as well as the corresponding geographic feature on the **Map** view. You can do the same in reverse: clicking on a feature on the **Map** will highlight its corresponding attribute table record in blue.
+4. The attribute table stores important qualitative and quantitative details about the geometric features represented on the map. Each feature in the map corresponds to a row in the attribute table. Let me say that again: **each feature in the map corresponds to a row in the attribute table**. Very important to recognize this!
 
-## 4. Making your map
+5. In the attribute table, columns are called "fields" or "attributes," while rows are called "records" or "features."
 
-## 5. Creating your layout
+6. You can "Select" a record by clicking the **record number**, or the leftmost cell in the row (the one to the left of the `OBJECTID_1` column).
 
-## 6. Questions & deliverables
+7. Select the record with an `OBJECTID_1` value of `1`. It should be at the very top of your attribute table. If it isn't, you can double-click on `OBJECTID_1` and toggle the sort order of the attribute table (e.g., between low-to-high and high-to-low).
 
+    <div class="extra">
+    
+    Note that there are two fields with similar names in this attribute table: `OBJECTID_1` and `OBJECTID`. Looks kind of weird, right? For 3.75 points of extra credit (5% of your grade on this lab), explain in no more than 2 sentences why this happened. (To accomplish this, you may have to do some snooping; e.g., compare the attribute table of your `lab01.gdb` feature classes against those of your `downloaded-data` shapefiles.)
 
+    </div>
+
+8. Selecting a cell will highlight the whole row, as well as the corresponding geographic feature on the **Map** view, in light blue.
+
+9.  However, depending on the scale and region of your **Map** view, it may be hard to see the row that you've selected in the **Map** view.
+
+10. You can right-click on the row number to zoom to a specific feature; that is, right-click > "Zoom To", or the keystroke `ctrl+=`.
+
+11. Try zooming to the feature with a an `OBJECTID_1` value of `1` (you can also zoom to a feature by double-clicking the record number). Your screen should resemble:
+
+    <figure>
+    <img src="images/image42.png">
+    <figcaption>
+
+    Zoomed-in view of a selected feature
+    </figcaption>
+    </figure>
+
+    <div class='q'>
+    
+    Use the attribute table to determine the following for the layer `re_200`:
+    * In total, how many features does the attribute table contain?
+    * What is the `OBJECTID` value of the feature with the **largest `area`**?
+    * What is the **name** of the feature with an `OBJECTID_1` value of `1`? Since there's no attribute for "Feature name," you may have to toggle your layers on and off.
+
+    </div>
+
+If this feels like a familiar process, that's because, it is! You did something similar to this already when answering [Question 3](#q-3). In the section of this lab on the [Ribbon](#the-ribbon), you used the "Selection" group of the **Map** tab to query and filter attribute data:
+
+<figure>
+<img src="images/image43.png">
+<figcaption>
+
+The selection group in the "Map" tab of the Ribbon
+</figcaption>
+</figure>
+
+When you're using ArcGIS Pro---and really, when you're doing *any* geospatial project, whether using this software or not---there are almost always multiple ways to answer the same question.
+
+Before proceeding to the next section:
+
+1. Right-click on any of the layers in your **Contents** pane and choose "Zoom to Layer." This will snap your **Map** view to that data layer's geographic extent.
+2. In the "Selection" group of the **Map** tab, click "Clear"
+
+#### Symbology
+
+In ArcGIS Pro, **symbology** entails all aspects of cartographic representation. The color of a polygon, the thickness of a line, and the icon used for a point are all determined in the "Symbology" tab of a layer's properties.
+
+1. To access a layer's symbology, simply right-click > "Symbology". Try it out on the layer `re_14` (just make sure that layer is at the top of the "stack" in your **Contents** pane).
+
+2. A new **Symbology** window should replace your **Catalog** pane:
+
+    <figure>
+    <img src="images/image40.png" width=400>
+    <figcaption>
+
+    The attribute table
+    </figcaption>
+    </figure>
+
+3. Click the color swatch next to the word "Symbol":
+
+    <figure>
+    <img src="images/image44.png" width=300>
+    </figure>
+
+4. Choose a new color for the feature.
+
+5. First, click a design from the "Gallery" of preset colors. These come off the shelf of ArcGIS Pro. When you click one of the options, the feature will automatically update in the **Map** view.
+
+6. Next, click the "Properties" tab and try defining your own color, outline, and outline width. When you've made your choices, you need to click "Apply" to apply them to the **Map** view. Then, click the `<-` arrow to return to the main **Symbology** pane.
+
+    <figure>
+    <img src="images/image45.png">
+    </figure>
+
+7. You can also symbolize features based on attributes in the attribute table. Click the drop-down bar under the "Primary Symbology" header and select "Graduated Colors". This will automatically redraw your `re_14` layer, likely using the `OBJECTID_1` field. You should see something like this:
+
+    <figure>
+    <img src="images/image46.png">
+    </figure>
+
+8. The `OBJECTID_1` field isn't very useful to symbolize. Because it's just an metadata value, it doesn't show us meaningful data or spatial patterns. Unforunately, there aren't many meaningful fields baked into the `re_14` layer, but go ahead and try setting the value of "Field" to `AREA`. Feel free to play around with the "Color scheme" as well.
+
+9. Now choose the "Select" tool from the **Map** tab.
+
+10. Open the attribute table for `re_14`. If you never closed your attribute table for `re_200`, you'll see this second one appear in a new tab. Click the "Show Selected Records" button as indicated in the screenshot below:
+
+     <figure>
+    <img src="images/image47.png">
+    </figure>
+
+11. This view of the attribute table allows you to view only records that are currently selected in the **Map** view. Try selecting a few features and you'll see that the view of the attribute table dynamically populated based on what you've selected:
+
+    <figure>
+    <img src="images/image48.png">
+    </figure>
+
+12. Try selecting the 3 features that overlap modern-day Tunisia, Algiers, Spain, and France. You'll have to hold down the `shift` key while you're clicking each one.
+    
+    <figure>
+    <img src="images/image49.png">
+    </figure>
+
+13. Now, in the attribute table, right-click the `AREA` header and select "Summarize". This will open the handy [Summary Statistics](https://pro.arcgis.com/en/pro-app/latest/tool-reference/analysis/summary-statistics.htm) tool, which you can use to calculate summary statistics for fields in an attribute table.
+
+    Complete the form so that it resembles the following, and then click "OK":
+
+    <figure>
+    <img src="images/image50.png" width=300>
+    </figure>
+
+14. Once the tool has finished running, a new layer titled `Distribution of AREA` should appear under a header called "Charts" in your **Contents** pane. Double-click on the `Distribution of AREA` layer, and a chart should appear on the right-hand side of your screen:
+
+    <figure>
+    <img src="images/image51.png">
+    </figure>
+
+    <div class="q">
+
+    Examine the "Statistics" section of the "Chart Properties" for `re_14`. What is the **sum** of:
+    * the whole dataset?
+    * your selection?
+
+    </div>
+
+Once you've answered this question, you can:
+
+* Remove the `Distribution of AREA` layer from the **Contents** pane
+* Close out of the "Chart Properties" dialog box
+* Click the **Map** tab in the **Ribbon** to return to a more familiar interface
+
+### Command search box
+
+If you ever get lost searching for something in ArcGIS Pro—e.g., any of the many things that have been discussed so far in this lab—try typing it out in the **Command Search Box** at the top of the screen, just to the right your `.aprx` file name:
+
+<figure>
+<img src="images/image52.png" width=350>
+<figcaption>
+
+The command search box
+
+</figcaption>
+</figure>
+
+## Making your map
+
+Although this was far from an exhaustive tour of the ArcGIS Pro interface, it's given you a basic overview of how to:
+
+* Organize your project and project files using **Windows File Explorer** and the **Catalog** pane
+* Interact with ArcGIS Pro's interface
+* Load and remove spatial data layers using things like the **Catalog** and **Contents** pane
+* Query and filter spatial data attributes using the "attribute table"
+* Basic symbolization via the **Symbology** pane
+
+Believe it or not, this is enough for you to make a basic map! So go forth and do that.
+
+You've downloaded a bunch of data from the Ancient World Mapping Center. (AWMC) Right now, it's saved in your `downloaded-data` folder.
+
+To finish this lab, add **at least 5 more AWMC data layers** to your project, not including one of the Roman Empire extent layers. Try to use a combination of data from the `Physical Shapefiles` folder and the `Cultural Shapefiles` folder.
+
+### Specifications
+
+Your final map should include, at minimum:
+* 1 of the Roman Empire extent layers
+* 5 additional physical and cultural layers
+* Some kind of symbology applied to all your layers
+* All layers must be clearly visible at the scale of your exported map
+
+Most importantly, your map:
+* Does not need to look pretty or fancy!
+* This is an exercise in working with ArcGIS Pro and spatial data—<span class="key">NOT</span> an exercise in cartographic design
+
+A few tips:
+* If you load a dataset but can't determine its geographic extent, try right-clicking on the layer and selecting "Zoom To Layer"
+* <span class="key">IMPORTANT:</span> To export your map as a `png` file, click the "Share" tab of the **Ribbon**, Click "Export Map", select `PNG` as the "File Type", choose a suitable file path for export, and click "OK"
+
+<figure>
+<img src="images/image53.png" width=300>
+</figure>
+
+### Example map
+
+Here is a sample map containing 6 layers:
+1. the Roman Empire extent in 14 AD
+2. inland water
+3. urban footprint
+4. forts
+5. mines & quarries
+6. rivers
+
+<figure>
+<img src="images/image54.png">
+</figure>
+
+## Questions & deliverables
+
+* [Question 1](#q-1)
+* [Question 2](#q-1)
+* [Question 3](#q-1)
+* [Question 4](#q-1)
+* [Question 5](#q-1)
+* [Question 6](#q-1)
+* [Instructions on submitting your map](#specifications)
+
+## Submit
+
+<a class="submit" target="blank" href="https://canvas.tufts.edu/courses/63026/assignments/480017">Submit Lab 01</a>
 
 </div>

@@ -4,7 +4,7 @@
 
 # Coursework directory
 
-The semester's activities, assignments, and labs are posted below. To find readings (<span class="fa-solid fa-book smaller"></span>) and slides (<span class="fa-solid fa-person-chalkboard smaller"></span>), see the [schedule](schedule). Instructions for [curations](curations) and [final projects](final) are also posted elsewhere.
+The semester's activities, assignments, and labs are posted below. To find readings (<span class="fa-solid fa-book smaller"></span>) and slides (<span class="fa-solid fa-person-chalkboard smaller"></span>), see the [schedule](schedule). The timeline and instructions for your [final projects are posted elsewhere](final).
 
 ## Activities
 
@@ -115,22 +115,30 @@ function rendertable(data, part) {
 
       let icon;
 
-      if (item.actpath) {
-        icon = 
-        `<b><a href="${item.actpath}" target="blank" class="fa-solid fa-pen icon"></a></b>`
-      } else if (item.labpath) {
-        icon = 
-        `<b"><a href="${item.labpath}" target="blank" class="fa-solid fa-computer icon"></a></b>`
-      } else if (item.asspath) {
-        icon = 
-        `<b><a href="${item.asspath}" target="blank" class="fa-solid fa-compass-drafting icon"></a></b>`
-      } else if (item.classpath) {
-        icon = 
-        `<b><a href="${item.classpath}" target="blank" class="fa-solid fa-scroll icon"></a></b>`
+      function iconify() {
+        if (item.actpath) {
+          const icon = item.status ?
+          `<b><a href="${item.actpath}" target="blank" class="fa-solid fa-pen icon"></a></b>` :
+          `<b class="gray"><i class="fa-solid fa-pen"></i></b>`;
+          return icon;
+        } else if (item.labpath) {
+          const icon = item.status ?
+          `<b"><a href="${item.labpath}" target="blank" class="fa-solid fa-computer icon"></a></b>` : `<b class="gray"><i class="fa-solid fa-computer"></i></b>`;
+          return icon;
+        } else if (item.asspath) {
+          const icon = item.status ?
+          `<b><a href="${item.asspath}" target="blank" class="fa-solid fa-compass-drafting icon"></a></b>`: `<b class="gray"><i class="fa-solid fa-compass-drafting"></i></b>`;
+          return icon;
+        } else if (item.classpath) {
+          const icon = item.status ?
+          `<b><a href="${item.classpath}" target="blank" class="fa-solid fa-scroll icon"></a></b>` : `<b class="gray"><i class="fa-solid fa-scroll"></i></b>`;
+          return icon;
+        }
       }
 
-      const submit =
-      `<b><a href="${item.submit}" target="blank" class="fa-solid fa-upload icon"></a></b>`
+      const submit = item.submit ?
+      `<b><a href="${item.submit}" target="blank" class="fa-solid fa-upload icon"></a></b>` :
+      `<b class="fa-solid gray fa-upload"></b>`
         
         table.innerHTML = `
         <td width="160">
@@ -146,7 +154,7 @@ function rendertable(data, part) {
             </div>
         </td>
         <td>
-            ${icon}
+            ${iconify()}
         </td>
         <td>
             ${submit}

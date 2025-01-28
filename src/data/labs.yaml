@@ -1,13 +1,13 @@
 - title: Lab 1
   id: lab-01
   subtitle: Assessing the terrain
-  assigned: 01/21
-  due: 01/29
+  assigned: 01/28
+  due: 02/05
   description: Get started with geographic information systems for humanistic inquiry
   labpath: ./coursework/labs/lab01/assessing-the-terrain
-  status: available
   tags: ['file organization', 'directory structure', 'arcgis pro interface', 'symbology', 'ribbon', 'catalog', 'contents pane', 'ancient world mapping center']
-  submit: ''
+  submit: 'https://canvas.tufts.edu/courses/63026/assignments/480017'
+  status: available
 
 - title: Lab 2
   id: lab-02
@@ -16,9 +16,9 @@
   due: 02/19
   description: Explore the geographies of capitalism and slavery through a detailed dataset of enslaved peoples' voyages
   labpath: ./coursework/labs/lab02/slave-voyages
-  status: unavailable
   tags: ['']
   submit: ''
+  # status: available
 
 - title: Lab 3
   id: lab-03
@@ -27,9 +27,9 @@
   due: 03/05
   description: Visualize relationships between imperial power and the built environment
   labpath: ./coursework/labs/lab03/lighthouses
-  status: unavailable
   tags: ['']
   submit: ''
+  # status: available
 
 - title: Lab 4
   id: lab-04
@@ -38,6 +38,6 @@
   due: 04/02
   description: Estimate the migration patterns of speakers of an early language
   labpath: ./coursework/labs/lab04/indo-european
-  status: unavailable
   tags: ['']
   submit: ''
+  # status: available

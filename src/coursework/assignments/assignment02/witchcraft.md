@@ -80,20 +80,18 @@ Before you start working on this assignment, check out this pair of maps that [D
 
 <div class="grid grid-cols-2">
     <figure>
-        <a href="https://collections.leventhalmap.org/search/commonwealth:3x817744n" target="blank">
+        <a href="https://collections.leventhalmap.org/search/commonwealth:3x817744n" target="blank"></a>
         <img src="https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:s4657c413/full/full/0/default.jpg">
         <figcaption> 
             Disconnected
         </figcaption>
-        </a>
     </figure>        
     <figure>
-        <a href="https://collections.leventhalmap.org/search/commonwealth:3x817734d" target="blank">
+        <a href="https://collections.leventhalmap.org/search/commonwealth:3x817734d" target="blank"></a>
         <img src="https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:3x8177423/full/full/0/default.jpg">
         <figcaption>
             Connected
         </figcaption>
-        </a>
     </figure>
 </div>
 

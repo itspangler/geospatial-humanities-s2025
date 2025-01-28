@@ -8,9 +8,9 @@
 :root {
   --theme-background: #fff /* #E0F7FA; */;
   --theme-foreground: #101656;
-  --theme-background-alt: #fff /* #E0F7FA; */;
+  --theme-background-alt: rgb(244, 248, 254) /* #E0F7FA; */;
   --theme-foreground-alt: #101656;
-  --theme-foreground-muted: #101656;
+  --theme-foreground-muted: #255770;;
   --theme-foreground-focus: #C552B5;
   --theme-foreground-focus-muted: #ffbbe3;
   --grey: #dddbdb; 
@@ -48,6 +48,10 @@ h2, h3, h4 {
   table>thead {
     border-bottom: 1px solid var(--theme-foreground);
   }
+}
+
+table {
+  max-width: 900px;
 }
 
 tbody>tr:hover {
@@ -362,6 +366,21 @@ input:checked + .coursework-container + .coursework {
 
 /* labs, activities, assignments components */
 
+.extra {
+  border: dotted 2px #f4ff1c;
+  background-color: #fbfdd7;
+  margin: 2em;
+  padding: 1em;
+  max-width: 500px;
+  filter: drop-shadow(10px 10px #f4ff1c);
+  &:before /* .callout > details > summary */ {
+    content: "> EXTRA CREDIT!";
+    font-weight: 700;
+    border-bottom: dotted 2px black;
+    max-width: fit-content;
+  }
+}
+
 .callout {
   font-family: monospace;
   font-size: 0.8em;
@@ -410,16 +429,6 @@ input:checked + .coursework-container + .coursework {
 
 .aside > p {
   margin: 0.5rem;
-}
-
-.woohoo {
-  font-family: monospace;
-  border: dotted 2px var(--theme-foreground-focus);
-  background-color: #3d363a;
-  margin: 2em;
-  padding: 1em;
-  max-width: 500px;
-  filter: drop-shadow(10px 10px var(--theme-foreground-focus));
 }
 
 a code {
@@ -500,33 +509,8 @@ figure figcaption {
   word-spacing: 0.2em;
   text-transform: uppercase;
   color: #29627e;
-  border-top: 1px dotted var(--theme-foreground);
+  /* border-top: 1px dotted var(--theme-foreground); */
   border-bottom: 1px dotted var(--theme-foreground);
-}
-
-.logo {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  font-size: 16px; /* Adjust as needed */
-  font-family: monospace;
-  background-color: var(--theme-foreground-focus-muted);
-  /* margin: 0px 0.2em 0px 0.2em; */
-  padding: 0px 0.4em 0px 0.4em;
-}
-
-.information {
-  max-width: 540px;
-  /* padding: 2em;
-  margin-bottom: 2em; */
-  /* &:before {
-    content: 'Information';
-    font-size: 0.8em;
-    font-family: monospace;
-    font-weight: 900;
-    border-bottom: dotted 2px black;
-    text-transform: uppercase;
-  } */
 }
 
 ol li::marker {
@@ -625,8 +609,22 @@ footer {
 
 blockquote {
   font-size: 0.8em;
-  color: #255770;
+  color: var(--theme-foreground-muted);
   padding: 1rem 1rem 1rem 2rem;
   border-left:4px solid var(--theme-foreground);
-  background: rgb(244, 248, 254);
+  background: var(--theme-background-alt);
+}
+
+.intro {
+  max-width: 600px;
+  padding: 1em;
+  background: var(--theme-background-alt);
+}
+
+#observablehq-toc {
+  background: var(--theme-background-alt);
+}
+
+#observablehq-header {
+  background: var(--theme-background-alt);
 }

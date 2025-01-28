@@ -1,1 +1,0 @@
-# Activity 04: Final project proposal

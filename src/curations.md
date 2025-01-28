@@ -1,22 +1,33 @@
----
-toc: false
----
+<script type="module" src="./assets/js/script.js"></script>
+<script type="module">
+  const scriptUrl = new URL('_import/assets/js/script.f6e5b1ef.js', import.meta.url).href;
+  import(scriptUrl).then(module => {
+    module.images();
+  })
+</script>
 
-<script type="module" src="../../../script.js"></script>
 
 # Curations
 
 <figure>
 
-| ![bates](https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:8623mm05h/149,1072,5548,2277/1200,/0/default.jpg) |
-| :----------------------------------------------------------------------------------------------------------------: |
-| *[Bates Hall, Boston Public Library, ca. 1996](https://www.digitalcommonwealth.org/search/commonwealth:w6636v74b)* |
+<img src="https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:8623mm05h/149,1072,5548,2277/1200,/0/default.jpg">
+<figcaption>
 
+[Bates Hall, Boston Public Library, ca. 1996](https://www.digitalcommonwealth.org/search/commonwealth:w6636v74b)
+
+</figcaption>
 </figure>
 
-This group project invites you to reflect creatively on the curatorial facets of everyday life. You'll post the outcome
+## Introduction
 
-The humanities have always been filled with curatorial activities. The places where objects of the humanities are held and exhibited—like museums, galleries, and libraries—are motivated by curation. Libraries and museums can't keep everything, and what they *do* keep must be routinely [weeded](https://en.wikipedia.org/wiki/Weeding_(library)) to make space for new things.
+This project invites you to creatively reflect on a core part of the humanities: curation. However, . Here, I don't mean "the humanities" in a detached antiquarian sense (which is to say, crinkled paper, archival materials, literary texts, and so on). Instead, think about "the humanities" as the objects and process which enable you to *be human* in an increasingly digital (and geospatial) world. By examining how you curate , you'll identify the spatiality of the humanities in your everyday life.
+
+## Why curation?
+
+Curation 
+
+The places where objects of the humanities are held and exhibited—like museums, galleries, and libraries—are motivated by curation. Libraries and museums can't keep everything, and what they *do* keep must be routinely [weeded](https://en.wikipedia.org/wiki/Weeding_(library)) to make space for new things.
 
 Today, the humanities are changing. Everything is digital first. "Collections as data" transform the vast expanse of human knowledge into structured, queryable information.
 
@@ -26,7 +37,7 @@ How do you put your physical and digital self on display? What kind of informati
 
 What's "human" about the humanities? Where do the humanities appear in your everyday life? What's at stake in the proliferation of geospatiality in the humanities; what might we have to gain or lose?
 
-## Collect yourself!
+## Collect yourself
 
 Invitation to reflect creatively on the curatorial impulse; to engage with the geo/spatiality of the humanities, not "humanities" in a detached antiquarian sense but in the sense of the actual reality of your everyday life, the experience of "being human" in a digital---and indeed, a geospatial---world
 

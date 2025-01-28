@@ -1,14 +1,14 @@
 - title: Assignment 1
   id: ass-01
-  subtitle: Geohumanities
-  assigned: 01/29
-  due: 02/04
+  subtitle: Reviews in GH
+  assigned: 01/21
+  due: 01/29
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:st74fc431/full/pct:25/0/bitonal.jpg
   description: Reflect on the geospatial humanities
-  asspath: coursework/assignments/assignment01/geohumanities
+  asspath: coursework/assignments/assignment01/geospatial-humanities
   status: available
   tags: ['']
-  submit: ''
+  submit: 'https://canvas.tufts.edu/courses/63026/assignments/490439'
 
 - title: Assignment 2
   id: ass-02
@@ -18,7 +18,7 @@
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:3f462v56m/693,1395,4227,2204/1200,/0/default.jpg
   description: Inhabit the mindset of a cartographically propagandistic Scottish peasant
   asspath: coursework/assignments/assignment02/witchcraft
-  status: unavailable
+  # status: unavailable
   tags: ['']
   submit: ''
 
@@ -30,7 +30,7 @@
   image: https://iiif.bc.edu/iiif/2/LS-JB-ND-2.jp2/163,386,3497,2284/600,/0/default.jpg
   description: Study change over time through asphalt and old maps
   asspath: ./coursework/assignments/assignment03/parking-lot-cemeteries
-  status: unavailable
+  # status: unavailable
   tags: ['']
   submit: ''
 
@@ -42,6 +42,6 @@
   image: https://upload.wikimedia.org/wikipedia/commons/3/3e/Yamna03.jpg
   description: Submit a draft of your final project
   asspath: ./coursework/assignments/assignment04/fp-draft
-  status: unavailable
+  # status: unavailable
   tags: ['']
   submit: ''

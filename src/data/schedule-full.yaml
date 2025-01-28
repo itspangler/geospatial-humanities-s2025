@@ -7,7 +7,7 @@
   abstract: What are the "geospatial humanities?" What are its constitutive objects, and why should you care about them?
   slides: ''
   read: ''
-  act: '../coursework/activities/activity01/what-is-a-map'
+  act: ''
   lab: ''
   ass: ''
 
@@ -19,10 +19,10 @@
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:bv73fm17b/198,1228,6072,1476/1200,/0/default.jpg
   abstract: What defines a "humanistic" approach to geographic information systems and spatial data? How ought we approach these questions from a technical perspective?
   slides: ''
-  read: 'https://journalofdigitalhumanities.org/2-3/big-smart-clean-messy-data-in-the-humanities/'
+  read: ''
   act: ''
-  lab: '../coursework/labs/lab01/assessing-the-terrain'
-  ass: ''
+  lab: ''
+  ass: '../coursework/assignments/assignment01/geospatial-humanities'
 
 - week: Week 03
   id: week-3
@@ -32,21 +32,21 @@
   abstract: How do we go about displaying round earth as a flat map? What sacrifices do we have to make in order to “flatten” the globe, and how have those sacrifices been used strategically?
   image: https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:7h149v913/273,1191,7435,1792/1200,/0/default.jpg
   slides: '' 
-  read: 'https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/'
-  act: ''
-  lab: ''
-  ass: '../coursework/assignments/assignment01/geohumanities'
-  
+  read: ''
+  # read: 'https://www.leventhalmap.org/digital-exhibitions/bending-lines/how-to-bend/projections/'
+  act: '../coursework/activities/activity01/data-in-the-humanities'
+  lab: '../coursework/labs/lab01/assessing-the-terrain'
+  ass: ''
 
 - week: Week 04
   id: week-4
   date: 02/11
   title: Data
   subtitle: Carto-ethics, geo-data
-  abstract: What is spatial data and where does it come from? How should you understand spatial data in their social, political, and ethical context?
+  abstract: What is spatial data and where does it come from? How should you understand spatial data in their social, political, and ethical context? Note that this week's reading requires a <a href="https://researchguides.library.tufts.edu/nytimes" target="blank">subscription to NYT</a>.
   localimage: punch-card.png
   slides: ''
-  read: https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html.
+  read: https://www.nytimes.com/2022/01/28/opinion/slavery-voyages-data-sets.html
   act: ../coursework/activities/activity02/mapping-ancient-places
   lab: ''
   ass: ''
@@ -128,6 +128,7 @@
   act: '../coursework/activities/activity04/fp-proposal'
   lab: ''
   ass: ../coursework/assignments/assignment03/parking-lot-cemeteries
+  fp: '../coursework/activities/activity04/fp-proposal'
 
 - week: Week 11
   id: week-11
@@ -163,7 +164,7 @@
   abstract: What tools exist for visualizing data beyond the map?
   image: https://www.cooperhewitt.org/wp-content/uploads/2022/12/Du-Bois_Combined.jpg
   slides: ''
-  read: 'section from Meghan Kelly on feminist map icons?'
+  read: 'tbd'
   act: '../coursework/activities/activity06/nlp-for-gis'
   lab: ''
   ass: ''
@@ -180,6 +181,7 @@
   act: ''
   lab: ''
   ass: '../coursework/assignments/assignment04/fp-draft'
+  fp: ../coursework/assignments/assignment04/fp-draft
 
 - week: Week 15
   id: week-15
@@ -206,3 +208,4 @@
   lab: ''
   act: ''
   ass: ''
+  fp: 'final'

@@ -1,4 +1,10 @@
-<script type="module" src="../../../script.js"></script>
+<script type="module" src="../../../assets/js/script.js"></script>
+<script type="module">
+  const scriptUrl = new URL('_import/assets/js/script.f6e5b1ef.js', import.meta.url).href;
+  import(scriptUrl).then(module => {
+    module.images();
+  })
+</script>
 
 # **Assignment 03: Parking lot cemeteries** <!-- omit in toc -->
 
