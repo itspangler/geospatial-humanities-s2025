@@ -41,7 +41,7 @@ The front half of the term (pre-spring recess) is heavier with readings and labs
 
 This outline is subject to change as the semester progresses:
 
-<div class="headless noselect">
+<div class="headless">
     <table>
         <thead>
             <tr>

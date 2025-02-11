@@ -12,6 +12,14 @@
 
 [![alt text](images/image.png)](https://credo.library.umass.edu/view/zoom/mufs001-xn-i0714)
 
+```js
+import yaml from 'js-yaml';
+const response = await FileAttachment("../../../data/labs.yaml").text()
+const data = yaml.load(response)
+const d=[data[0]]
+view(Inputs.table(d, {width:{subtitle:200},disabled: "true",columns: ["subtitle","assigned","due"],header: {subtitle: "Activity",assigned: "Assigned",due: "Due"}}))
+```
+
 *This lab walks through the process of creating a basic map using ArcGIS Pro and data from the [Ancient World Mapping Center](https://awmc.unc.edu/) (AWMC). It is broken into five sections:*
 
 <ol class="circle-list">
@@ -22,7 +30,7 @@
 <li>Creating your layout</li>
 </ol>
 
-By **Wednesday, January 29 at 11:59pm**, [submit to Canvas](#6-questions-and-deliverables):
+By **Wednesday, February 5 at 11:59pm**, [submit to Canvas](#questions-and-deliverables):
 
 * your map, exported in `.png` format
 * answers to the questions in <span style="border: dotted 2px #47a954;background-color:#d8fedd;font-family:monospace;font-size:0.8em;padding:0.2em;">green boxes</span>, compiled and submitted in a `.doc`, `.odf`, or `.pdf` file
@@ -47,7 +55,7 @@ By **Wednesday, January 29 at 11:59pm**, [submit to Canvas](#6-questions-and-del
 - [Making your map](#making-your-map)
   - [Specifications](#specifications)
   - [Example map](#example-map)
-- [Questions \& deliverables](#questions--deliverables)
+- [Questions and deliverables](#questions-and-deliverables)
 - [Submit](#submit)
 
 </details>
@@ -586,7 +594,7 @@ Two of the most important features displayed in the **Map** view are actually ac
 
 Earlier, I mentioned the "attribute table." This is one of the most important features of any geographic information system. The attribute table ties geographic features to descriptive information, allowing you to connect qualitative and quantitative observations about the world with their real-life locations. Thanks, attribute table!
 
-You can open the attribute table by interacting with layers in the **Contents** pane, but it will open in the 
+You can open the attribute table by interacting with layers in the **Contents** pane. The attribute table itself will open in the **Map** view.
 
 1. The **Attribute Table** displays all of the qualitative and quantitative information associated with a given layer. To open it, you can right-click a layer > "Attribute Table" or click on a layer and press `ctrl+T`.
 
@@ -726,7 +734,11 @@ In ArcGIS Pro, **symbology** entails all aspects of cartographic representation.
     <img src="images/image50.png" width=300>
     </figure>
 
-14. Once the tool has finished running, a new layer titled `Distribution of AREA` should appear under a header called "Charts" in your **Contents** pane. Double-click on the `Distribution of AREA` layer, and a chart should appear on the right-hand side of your screen:
+14. Once the tool has finished running, a new table titled `re_14_Statistics` should appear under a new header called "Standalone tables" in your **Contents** pane.
+
+15. Right-click in the `Area` column of the table and select "Visualize Statistics".
+
+16. A chart titled `Distribution of AREA` should appear under a header called "Charts" in your **Contents** pane. Double-click on the `Distribution of AREA` layer, and a chart should appear on the right-hand side of your screen:
 
     <figure>
     <img src="images/image51.png">
@@ -809,14 +821,14 @@ Here is a sample map containing 6 layers:
 <img src="images/image54.png">
 </figure>
 
-## Questions & deliverables
+## Questions and deliverables
 
 * [Question 1](#q-1)
-* [Question 2](#q-1)
-* [Question 3](#q-1)
-* [Question 4](#q-1)
-* [Question 5](#q-1)
-* [Question 6](#q-1)
+* [Question 2](#q-2)
+* [Question 3](#q-3)
+* [Question 4](#q-4)
+* [Question 5](#q-5)
+* [Question 6](#q-6)
 * [Instructions on submitting your map](#specifications)
 
 ## Submit

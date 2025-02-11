@@ -18,10 +18,10 @@
   image: https://pleiades.stoa.org/img/coverage.png
   description: Plot XY data and troubleshoot coordinate systems using the Pleiades gazetteer
   actpath: coursework/activities/activity02/mapping-ancient-places
-  tags: ['plot xy data', 'coordinate systems', 'projections', 'attribute table queries']
+  tags: ['plot xy data', 'buffer', 'measure', 'coordinate systems', 'projections', 'attribute table queries']
   discard: ''
-  submit: ''
-  # status: available
+  submit: '480000'
+  status: available
 
 - title: Activity 3
   id: act-03
