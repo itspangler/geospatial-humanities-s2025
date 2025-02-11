@@ -17,8 +17,8 @@
   description: Explore the geographies of capitalism and slavery through a detailed dataset of enslaved peoples' voyages
   labpath: ./coursework/labs/lab02/slave-voyages
   tags: ['']
-  submit: ''
-  # status: available
+  submit: 'https://canvas.tufts.edu/courses/63026/assignments/480018'
+  status: available
 
 - title: Lab 3
   id: lab-03
@@ -34,7 +34,7 @@
 - title: Lab 4
   id: lab-04
   subtitle: Language, reconstructed
-  assigned: 03/18
+  assigned: 03/25
   due: 04/02
   description: Estimate the migration patterns of speakers of an early language
   labpath: ./coursework/labs/lab04/indo-european
